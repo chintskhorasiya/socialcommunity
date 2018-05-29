@@ -1,2 +1,2 @@
-# Krushi Prabhat
-A news site application for farmers related news, which contains frontend and backend with CAKE PHP 2.0
+# Social Community
+A news site application for community members and their committee members, which contains frontend and backend with CAKE PHP 2.0
