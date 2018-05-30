@@ -24,6 +24,7 @@ if(!defined("DEFAULT_HOMEMODULE_IMAGE_URL")) define("DEFAULT_HOMEMODULE_IMAGE_UR
 if(!defined("DEFAULT_ADVERTISE_IMAGE_URL")) define("DEFAULT_ADVERTISE_IMAGE_URL", DEFAULT_URL.'img/uploads/advertises_images/');
 if(!defined("DEFAULT_GALLERY_IMAGE_URL")) define("DEFAULT_GALLERY_IMAGE_URL", DEFAULT_URL.'img/uploads/galleryimages_images/');
 if(!defined("DEFAULT_COMMITTEEMEMBER_IMAGE_URL")) define("DEFAULT_COMMITTEEMEMBER_IMAGE_URL", DEFAULT_URL.'img/uploads/committeemembers_images/');
+if(!defined("DEFAULT_MEMBER_IMAGE_URL")) define("DEFAULT_MEMBER_IMAGE_URL", DEFAULT_URL.'img/uploads/members_images/');
 if(!defined("DEFAULT_DONATION_IMAGE_URL")) define("DEFAULT_DONATION_IMAGE_URL", DEFAULT_URL.'img/uploads/Donations_images/');
 
 

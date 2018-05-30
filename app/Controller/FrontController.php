@@ -381,6 +381,32 @@ class FrontController extends AppController
         $this->set('yuva_commitee_data', $get_yuva_commitee_data);
     }
 
+    public function member_directory_list()
+    {
+        $this->loadmodel('Member');
+
+        $this->paginate = array(
+            'conditions' => array('User.status IN'=> array(1)),
+            'joins' => array(
+                array(
+                    'alias' => 'User',
+                    'table' => 'users',
+                    'type' => 'INNER',
+                    'conditions' => '`User`.`member_id` = `Member`.`id`'
+                )
+            ),
+            'limit' => 2,
+            'order' => array('id' => 'desc')
+        );
+
+        $get_members_data = $this->paginate('Member');
+
+        //$this->pre($get_members_data);exit;
+
+        $this->set('cms_page_title', 'Member Directory');
+        $this->set('members_data', $get_members_data);
+    }
+
     public function news_events_listing()
     {
         $this->loadmodel('Newsevent');

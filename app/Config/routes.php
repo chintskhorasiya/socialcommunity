@@ -95,6 +95,11 @@
 	);
 
 	Router::connect(
+	    '/member-directory/*',
+	    array('controller' => 'front', 'action' => 'member_directory_list')
+	);
+
+	Router::connect(
 	    '/news/*',
 	    array('controller' => 'front', 'action' => 'news_listing')
 	);

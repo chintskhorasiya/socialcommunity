@@ -53,7 +53,7 @@
                     <section class="panel">
                         <div class="panel-body">
                             <h4><?php echo $page_heading; ?></h4>
-                            <p>List of Committee Members created by you.</p>
+                            <p>List of Members created by you.</p>
 
                             <?php
                             echo $this->Form->create('MembersSearch', array('url' => array('controller' => 'members', 'action' => 'search')));
@@ -74,7 +74,7 @@
 
                                 echo $this->Form->create('membersList',array('url' => array('controller' => 'members', 'action' => 'delete_selected')));
                                 ?>
-                                <input type="submit" class="btn btn-info btn-delete" value="Delete Selected Committee Members">
+                                <input type="submit" class="btn btn-info btn-delete" value="Delete Selected Members">
 
                                 <table class="display table table-bordered table-striped" id="dynamic-table">
                                     <thead>
@@ -106,7 +106,7 @@
                                                 
                                                 <td>
                                                     <div class="btn-group zn-listing-link">
-                                                        <?php echo $members_data[$i]['Member']['name']; ?>
+                                                        <?php echo $members_data[$i]['Member']['first_name']; ?>
                                                     </div>
                                                 </td>
 
@@ -127,6 +127,18 @@
                                                     <a href="<?php echo DEFAULT_ADMINURL.'members/edit/adId:'.$members_data[$i]['Member']['id'];?>" class="btn btn-default">Edit</a>
                                                     |
                                                     <a href="<?php echo DEFAULT_ADMINURL.'members/delete/adId:'.$members_data[$i]['Member']['id'];?>" class="btn btn-default btn-delete">Delete</a>
+                                                    |
+                                                    <?php
+                                                    if($members_data[$i]['Member']['status']=='1'){
+                                                        ?>
+                                                        <a href="<?php echo DEFAULT_ADMINURL.'members/changestatusdisable/adId:'.$members_data[$i]['Member']['id'];?>" class="btn btn-default">Disable</a>
+                                                        <?php
+                                                    } else {
+                                                    ?>
+                                                        <a href="<?php echo DEFAULT_ADMINURL.'members/changestatusenable/adId:'.$members_data[$i]['Member']['id'];?>" class="btn btn-default">Enable</a>
+                                                    <?php
+                                                    }
+                                                    ?>
                                                 </td>
                                             </tr>
                                             <?php

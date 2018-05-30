@@ -100,6 +100,16 @@
                     </li>
                     <li class="sub-menu">
                         <a href="javascript:void(0);">
+                            <i class="fa fa-tags"></i><span>Members</span>  
+                        </a>
+                        <ul class="sub">
+                            <li>
+                                <a href="<?php echo DEFAULT_ADMINURL ?>members/lists/<?php echo $encrypt_id;?>"><i class="fa fa-eye"></i>View Members</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="sub-menu">
+                        <a href="javascript:void(0);">
                             <i class="fa fa-tags"></i><span>Donors</span>
                         </a>
                         <ul class="sub">

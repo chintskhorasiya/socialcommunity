@@ -21391,3 +21391,336 @@ Request URL: /cakephp/communitysocial/img/hourhand.png
 Stack Trace:
 #0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2018-05-29 15:47:16 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'status' in where clause is ambiguous
+Request URL: /cakephp/communitysocial/admin/members/lists/c4ca4238a0b923820dcc1
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /var/www/cakephp/communitysocial/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `Member`...', Array)
+#2 /var/www/cakephp/communitysocial/lib/Cake/Model/Datasource/DboSource.php(664): DboSource->execute('SELECT `Member`...', Array, Array)
+#3 /var/www/cakephp/communitysocial/lib/Cake/Model/Datasource/DboSource.php(1113): DboSource->fetchAll('SELECT `Member`...', false)
+#4 /var/www/cakephp/communitysocial/lib/Cake/Model/Model.php(3031): DboSource->read(Object(Member), Array)
+#5 /var/www/cakephp/communitysocial/lib/Cake/Model/Model.php(3003): Model->_readDataSource('all', Array)
+#6 /var/www/cakephp/communitysocial/lib/Cake/Controller/Component/PaginatorComponent.php(196): Model->find('all', Array)
+#7 /var/www/cakephp/communitysocial/lib/Cake/Controller/Controller.php(1089): PaginatorComponent->paginate('Member', Array, Array)
+#8 /var/www/cakephp/communitysocial/app/Controller/MembersController.php(27): Controller->paginate('Member')
+#9 [internal function]: MembersController->admin_lists('c4ca4238a0b9238...')
+#10 /var/www/cakephp/communitysocial/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(MembersController), Array)
+#11 /var/www/cakephp/communitysocial/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /var/www/cakephp/communitysocial/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(MembersController), Object(CakeRequest))
+#13 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2018-05-29 17:33:12 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/img/IMG_202163.jpg
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-05-29 17:33:14 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/img/clockface.png
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-05-29 17:33:14 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/img/sechand.png
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-05-29 17:33:14 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/img/hourhand.png
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-05-29 17:33:14 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/img/minhand.png
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-05-29 18:49:55 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/mobilepopup/main1.css
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-05-29 18:49:55 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/mobilepopup/main1.css
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-05-29 19:05:26 Error: [MissingTableException] Table members_categories for model MembersCategory was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'members_categories',
+  'class' => 'MembersCategory',
+  'ds' => 'default',
+)
+Request URL: /cakephp/communitysocial/admin/members/edit/adId:21
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/lib/Cake/Model/Model.php(3653): Model->setSource('members_categor...')
+#1 /var/www/cakephp/communitysocial/lib/Cake/Model/Model.php(3031): Model->getDataSource()
+#2 /var/www/cakephp/communitysocial/lib/Cake/Model/Model.php(3003): Model->_readDataSource('all', Array)
+#3 /var/www/cakephp/communitysocial/app/Controller/MembersController.php(198): Model->find('all', Array)
+#4 [internal function]: MembersController->admin_edit()
+#5 /var/www/cakephp/communitysocial/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(MembersController), Array)
+#6 /var/www/cakephp/communitysocial/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#7 /var/www/cakephp/communitysocial/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(MembersController), Object(CakeRequest))
+#8 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2018-05-29 19:06:03 Error: [MissingTableException] Table members_categories for model MembersCategory was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'members_categories',
+  'class' => 'MembersCategory',
+  'ds' => 'default',
+)
+Request URL: /cakephp/communitysocial/admin/members/edit/adId:21
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/lib/Cake/Model/Model.php(3653): Model->setSource('members_categor...')
+#1 /var/www/cakephp/communitysocial/lib/Cake/Model/Model.php(3031): Model->getDataSource()
+#2 /var/www/cakephp/communitysocial/lib/Cake/Model/Model.php(3003): Model->_readDataSource('all', Array)
+#3 /var/www/cakephp/communitysocial/app/Controller/MembersController.php(198): Model->find('all', Array)
+#4 [internal function]: MembersController->admin_edit()
+#5 /var/www/cakephp/communitysocial/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(MembersController), Array)
+#6 /var/www/cakephp/communitysocial/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#7 /var/www/cakephp/communitysocial/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(MembersController), Object(CakeRequest))
+#8 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2018-05-29 19:07:27 Error: [MissingTableException] Table members_categories for model MembersCategory was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'members_categories',
+  'class' => 'MembersCategory',
+  'ds' => 'default',
+)
+Request URL: /cakephp/communitysocial/admin/members/edit/adId:21
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/lib/Cake/Model/Model.php(3653): Model->setSource('members_categor...')
+#1 /var/www/cakephp/communitysocial/lib/Cake/Model/Model.php(3031): Model->getDataSource()
+#2 /var/www/cakephp/communitysocial/lib/Cake/Model/Model.php(3003): Model->_readDataSource('all', Array)
+#3 /var/www/cakephp/communitysocial/app/Controller/MembersController.php(198): Model->find('all', Array)
+#4 [internal function]: MembersController->admin_edit()
+#5 /var/www/cakephp/communitysocial/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(MembersController), Array)
+#6 /var/www/cakephp/communitysocial/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#7 /var/www/cakephp/communitysocial/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(MembersController), Object(CakeRequest))
+#8 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2018-05-30 10:24:05 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/mobilepopup/main1.css
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-05-30 10:24:06 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/mobilepopup/main1.css
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-05-30 10:24:27 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/img/IMG_202163.jpg
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-05-30 10:24:36 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/img/clockface.png
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-05-30 10:24:36 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/img/sechand.png
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-05-30 10:24:36 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/img/minhand.png
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-05-30 10:24:36 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/img/hourhand.png
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-05-30 11:05:08 Error: [MissingActionException] Action MembersController::admin_add() could not be found.
+Exception Attributes: array (
+  'controller' => 'MembersController',
+  'action' => 'admin_add',
+)
+Request URL: /cakephp/communitysocial/admin/members/add
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/cakephp/communitysocial/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(MembersController), Object(CakeRequest))
+#2 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-05-30 11:05:11 Error: [MissingActionException] Action MembersController::admin_index() could not be found.
+Exception Attributes: array (
+  'controller' => 'MembersController',
+  'action' => 'admin_index',
+)
+Request URL: /cakephp/communitysocial/admin/members/
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/cakephp/communitysocial/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(MembersController), Object(CakeRequest))
+#2 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2018-05-30 11:40:05 Error: [MissingControllerException] Controller class <preClass=Controller could not be found.
+Exception Attributes: array (
+  'class' => '<preClass=Controller',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/%3Cpre%20class=
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-05-30 11:41:23 Error: [MissingControllerException] Controller class <preClass=Controller could not be found.
+Exception Attributes: array (
+  'class' => '<preClass=Controller',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/%3Cpre%20class=
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-05-30 11:41:23 Error: [MissingControllerException] Controller class <preClass=Controller could not be found.
+Exception Attributes: array (
+  'class' => '<preClass=Controller',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/%3Cpre%20class=
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-05-30 12:07:18 Error: Fatal Error (1): Call to undefined function test() in [/var/www/cakephp/communitysocial/app/View/Front/member_directory_list.ctp, line 50]
+2018-05-30 12:07:18 Error: [FatalErrorException] Call to undefined function test()
+Request URL: /cakephp/communitysocial/member-directory
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/var/www/cakeph...', 50)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/var/www/cakeph...', 50, Array)
+#2 /var/www/cakephp/communitysocial/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/var/www/cakeph...', 50, Array)
+#3 /var/www/cakephp/communitysocial/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-05-30 12:11:41 Error: Fatal Error (1): Call to undefined function test() in [/var/www/cakephp/communitysocial/app/View/Front/member_directory_list.ctp, line 50]
+2018-05-30 12:11:41 Error: [FatalErrorException] Call to undefined function test()
+Request URL: /cakephp/communitysocial/member-directory
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/var/www/cakeph...', 50)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/var/www/cakeph...', 50, Array)
+#2 /var/www/cakephp/communitysocial/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/var/www/cakeph...', 50, Array)
+#3 /var/www/cakephp/communitysocial/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-05-30 12:12:52 Error: Fatal Error (1): Call to undefined function test() in [/var/www/cakephp/communitysocial/app/View/Front/member_directory_list.ctp, line 50]
+2018-05-30 12:12:52 Error: [FatalErrorException] Call to undefined function test()
+Request URL: /cakephp/communitysocial/member-directory
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/var/www/cakeph...', 50)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/var/www/cakeph...', 50, Array)
+#2 /var/www/cakephp/communitysocial/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/var/www/cakeph...', 50, Array)
+#3 /var/www/cakephp/communitysocial/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-05-30 12:13:04 Error: Fatal Error (1): Call to undefined method View::test() in [/var/www/cakephp/communitysocial/app/View/Front/member_directory_list.ctp, line 50]
+2018-05-30 12:13:04 Error: [FatalErrorException] Call to undefined method View::test()
+Request URL: /cakephp/communitysocial/member-directory
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/var/www/cakeph...', 50)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/var/www/cakeph...', 50, Array)
+#2 /var/www/cakephp/communitysocial/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/var/www/cakeph...', 50, Array)
+#3 /var/www/cakephp/communitysocial/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-05-30 12:13:15 Error: [MissingHelperException] Helper class HelperHelper could not be found.
+Exception Attributes: array (
+  'class' => 'HelperHelper',
+  'plugin' => false,
+)
+Request URL: /cakephp/communitysocial/member-directory
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/lib/Cake/View/HelperCollection.php(63): HelperCollection->load('Helper')
+#1 /var/www/cakephp/communitysocial/lib/Cake/View/View.php(858): HelperCollection->__isset('Helper')
+#2 /var/www/cakephp/communitysocial/app/View/Front/member_directory_list.ctp(50): View->__get('Helper')
+#3 /var/www/cakephp/communitysocial/lib/Cake/View/View.php(971): include('/var/www/cakeph...')
+#4 /var/www/cakephp/communitysocial/lib/Cake/View/View.php(933): View->_evaluate('/var/www/cakeph...', Array)
+#5 /var/www/cakephp/communitysocial/lib/Cake/View/View.php(473): View->_render('/var/www/cakeph...')
+#6 /var/www/cakephp/communitysocial/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#7 /var/www/cakephp/communitysocial/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#8 /var/www/cakephp/communitysocial/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(FrontController), Object(CakeRequest))
+#9 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2018-05-30 12:13:24 Error: Fatal Error (4): syntax error, unexpected 'test' (T_STRING), expecting variable (T_VARIABLE) in [/var/www/cakephp/communitysocial/app/View/Helper/CommonHelper.php, line 50]
+2018-05-30 12:13:24 Error: [FatalErrorException] syntax error, unexpected 'test' (T_STRING), expecting variable (T_VARIABLE)
+Request URL: /cakephp/communitysocial/member-directory
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/cakeph...', 50)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/cakeph...', 50, Array)
+#2 /var/www/cakephp/communitysocial/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/cakeph...', 50, Array)
+#3 /var/www/cakephp/communitysocial/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-05-30 12:13:36 Error: [MissingHelperException] Helper class CommonHelperHelper could not be found.
+Exception Attributes: array (
+  'class' => 'CommonHelperHelper',
+  'plugin' => false,
+)
+Request URL: /cakephp/communitysocial/member-directory
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/lib/Cake/View/HelperCollection.php(63): HelperCollection->load('CommonHelper')
+#1 /var/www/cakephp/communitysocial/lib/Cake/View/View.php(858): HelperCollection->__isset('CommonHelper')
+#2 /var/www/cakephp/communitysocial/app/View/Front/member_directory_list.ctp(50): View->__get('CommonHelper')
+#3 /var/www/cakephp/communitysocial/lib/Cake/View/View.php(971): include('/var/www/cakeph...')
+#4 /var/www/cakephp/communitysocial/lib/Cake/View/View.php(933): View->_evaluate('/var/www/cakeph...', Array)
+#5 /var/www/cakephp/communitysocial/lib/Cake/View/View.php(473): View->_render('/var/www/cakeph...')
+#6 /var/www/cakephp/communitysocial/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#7 /var/www/cakephp/communitysocial/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#8 /var/www/cakephp/communitysocial/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(FrontController), Object(CakeRequest))
+#9 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}

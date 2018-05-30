@@ -33,6 +33,9 @@ function get_awnid($content)
 //        $this->pre($explode_content);
 
 }
+function test(){
+    return "test";
+}
 
 function db_query($sql, $type = "") {
     $result_id = mysql_query($sql);

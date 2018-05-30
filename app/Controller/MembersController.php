@@ -11,19 +11,27 @@ class MembersController extends AppController
 		$userid = $this->Session->read(md5(SITE_TITLE) . 'USERID');
 
         $this->paginate = array(
-            'conditions' => array(/*'user_id'=>$userid,*/'status IN'=> array(0,1)),
+            'conditions' => array('User.status IN'=> array(0,1)),
+            'joins' => array(
+		        array(
+		            'alias' => 'User',
+		            'table' => 'users',
+		            'type' => 'INNER',
+		            'conditions' => '`User`.`member_id` = `Member`.`id`'
+		        )
+		    ),
             'limit' => 25,
             'order' => array('id' => 'desc')
         );
 
         $members_data = $this->paginate('Member');
-
-        $this->set('page_heading','Committee Members');
+        //$this->pre($members_data);exit;
+        $this->set('page_heading','Members');
         $this->set('members_data',$members_data);
 
 	}
 
-	public function admin_add() {
+	public function admin_add123() {
 
 		if (!empty($this->data))
 		{
@@ -120,7 +128,7 @@ class MembersController extends AppController
 		{
 			//if($this->data['btn_save_page'] == "Save Member")
 			//{
-				$customValidate = true;
+				$customValidate = true;	
 
 				$userid = (int) $this->Session->read(md5(SITE_TITLE) . 'USERID');
 				
@@ -173,6 +181,20 @@ class MembersController extends AppController
 
 				    $errors_html .= "</ul>";
 
+				    if(!empty($this->data['Member']['country'])){
+	                    $country_id = $this->data['Member']['country'];
+	                    $this->loadmodel('State');
+	                    $states = $this->State->find('list', array('conditions' => array('country_id' => $country_id)));
+	                    $this->set('states',$states); //$states
+	                }
+
+	                if(!empty($this->data['Member']['state'])){
+	                    $state_id = $this->data['Member']['state'];
+	                    $this->loadmodel('City');
+	                    $cities = $this->City->find('list', array('conditions' => array('state_id' => $state_id)));
+	                    $this->set('cities',$cities); //$states
+	                }
+
 				    //$this->pre($errors_html);exit;
 				    //$this->pre($this->data['Member']);exit;
 
@@ -186,9 +208,47 @@ class MembersController extends AppController
 		
 		$members_data = $this->Member->find('first', array('conditions' => array('id' => $adId)));
 
-		$this->loadmodel('MembersCategory');
-		$members_categories_data = $this->MembersCategory->find('all', array('conditions' => array('status IN'=> array(1))));
-		$members_data['Member']['all_categories'] = $members_categories_data;
+		$this->loadmodel('Relation');
+        $relations = $this->Relation->find('list');
+        $this->set('relations', $relations);
+
+        $this->loadmodel('Gotra');
+        $gotras = $this->Gotra->find('list');
+        $this->set('gotras', $gotras);
+
+        $this->loadmodel('Proffession');
+        $proffessions = $this->Proffession->find('list');
+        $this->set('proffessions', $proffessions);
+
+        $this->loadmodel('Country');
+        $countries = $this->Country->find('list');
+        $this->set('countries', $countries);
+
+        if(!empty($members_data['Member']['country'])){
+            $country_id = $members_data['Member']['country'];
+            $this->loadmodel('State');
+            $states = $this->State->find('list', array('conditions' => array('country_id' => $country_id)));
+            $this->set('states',$states); //$states
+        }
+
+        if(!empty($members_data['Member']['state'])){
+            $state_id = $members_data['Member']['state'];
+            $this->loadmodel('City');
+            $cities = $this->City->find('list', array('conditions' => array('state_id' => $state_id)));
+            $this->set('cities',$cities); //$states
+        }
+
+        //$this->loadmodel('State');
+        //$states = $this->State->find('list');
+        if(!isset($states) && empty($states))
+        {
+            $this->set('states', array()); //$states
+        }
+
+         if(!isset($cities) && empty($cities))
+        {
+            $this->set('cities', array()); //$states
+        }
 
 		$this->set('members_data',$members_data);
 	}
@@ -196,14 +256,58 @@ class MembersController extends AppController
 	public function admin_delete() {
 
 		$adId = $this->params['named']['adId'];
+		$modified_date = date('Y-m-d H:i:s');
+
+		$this->Member->id = $this->Member->field('id', array('id' => $adId));
+		$this->Member->saveField('status', 2);
+		$this->Member->saveField('modified_date', $modified_date);
+		
+		$this->loadmodel('User');
+		$this->User->id = $this->User->field('id', array('member_id' => $adId));
+		$this->User->saveField('status', 2);
+		$this->User->saveField('modified_date', $modified_date);
+		
+		$_SESSION['success_msg'] = "Successfully deleted Member";
+		$return_url = DEFAULT_ADMINURL.'members/lists';
+		return $this->redirect($return_url);  
+	}
+
+	public function admin_changestatusenable() {
+
+		$adId = $this->params['named']['adId'];
 		
 		$this->Member->id = $this->Member->field('id', array('id' => $adId));
 
-		$this->Member->saveField('status', 2);
+		$this->Member->saveField('status', 1);
 		$modified_date = date('Y-m-d H:i:s');
 		$this->Member->saveField('modified_date', $modified_date);
 
-		$_SESSION['success_msg'] = "Successfully deleted Member";
+		$this->loadmodel('User');
+		$this->User->id = $this->User->field('id', array('member_id' => $adId));
+		$this->User->saveField('status', 1);
+		$this->User->saveField('modified_date', $modified_date);
+
+		$_SESSION['success_msg'] = "Successfully Enabled";
+		$return_url = DEFAULT_ADMINURL.'members/lists';
+		return $this->redirect($return_url);  
+	}
+
+	public function admin_changestatusdisable() {
+
+		$adId = $this->params['named']['adId'];
+		
+		$this->Member->id = $this->Member->field('id', array('id' => $adId));
+
+		$this->Member->saveField('status', 0);
+		$modified_date = date('Y-m-d H:i:s');
+		$this->Member->saveField('modified_date', $modified_date);
+
+		$this->loadmodel('User');
+		$this->User->id = $this->User->field('id', array('member_id' => $adId));
+		$this->User->saveField('status', 0);
+		$this->User->saveField('modified_date', $modified_date);
+
+		$_SESSION['success_msg'] = "Successfully Disabled";
 		$return_url = DEFAULT_ADMINURL.'members/lists';
 		return $this->redirect($return_url);  
 	}
@@ -270,7 +374,7 @@ class MembersController extends AppController
 	         	$search_key = trim($this->request->data['MembersSearch']['searchtitle']);
 	 
 	         	$conditions[] = array(
-	            	"Member.name LIKE" => "%".$search_key."%"
+	            	"Member.first_name LIKE" => "%".$search_key."%"
 	         	);
 
 	         	$this->Session->write('searchCond', $conditions);
@@ -278,7 +382,7 @@ class MembersController extends AppController
 	      	}
 	    }
 
-	    //$mainConditions = array('user_id'=>$userid, 'status IN'=> array(0,1));
+	    $mainConditions = array('Member.status IN'=> array(0,1));
 
 	    if ($this->Session->check('searchCond')) {
 	    	$conditions = $this->Session->read('searchCond');
@@ -288,8 +392,18 @@ class MembersController extends AppController
 	      	$allConditions = array_merge($mainConditions, $conditions);
 	   	}
 
+	   	//var_dump($allConditions);exit;
+
 	    $this->paginate = array(
             'conditions' => $allConditions,
+            'joins' => array(
+		        array(
+		            'alias' => 'User',
+		            'table' => 'users',
+		            'type' => 'INNER',
+		            'conditions' => '`User`.`member_id` = `Member`.`id`'
+		        )
+		    ),
             'limit' => 25,
             'order' => array('id' => 'desc')
         );

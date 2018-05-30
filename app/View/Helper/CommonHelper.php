@@ -47,4 +47,25 @@ class CommonHelper extends AppHelper {
         return $text;
     }
 
+    public function test(){
+        return "test...";
+    }
+
+    public function getCityName($city_id)
+    {
+        App::import("Model", "City");  
+        $City = new City();  
+        $citydata = $City->find('first', array('conditions' => array('id'=>$city_id)));
+        $city_name = $citydata['City']['name'];
+        return $city_name; 
+    }
+
+    public function getStateName($state_id){
+        App::import("Model", "State");  
+        $State = new State();  
+        $statedata = $State->find('first', array('conditions' => array('id'=>$state_id)));
+        $state_name = $statedata['State']['name'];
+        return $state_name; 
+    }
+
 }

@@ -300,44 +300,6 @@ $max_date = date('Y-m-d');
 
 		});
 	});
-  /*jQuery('.select-room-btn').click(function(){
-    var dataProperty = jQuery(this).attr('data-property');
-    var dataType = jQuery(this).attr('data-type');
-    var dataOccupancy = jQuery(this).attr('data-occupancy');
-    var dataRoom = jQuery(this).attr('data-room');
-
-    var postData = {
-              "property_id":dataProperty,
-              "room_type_id":dataType,
-              "room_occupancy_id":dataOccupancy
-          };
-
-    $.ajax({
-        url: "<?=DEFAULT_URL?>room-rates/getspecificrates/",
-        type: "POST",
-        data: {myData:postData},
-        success: function(data)
-         {
-          //alert(data);
-          jQuery('#room_price_'+dataRoom).html(data);
-         },
-    });
-  });*/
-
-  /*jQuery('.select-room-check').change(function(){
-    var roomRateId = jQuery(this).attr('data-room-rate');
-    if(jQuery(this).prop( "checked" )){
-      jQuery('#select_room_adult_'+roomRateId).attr('disabled', false);
-      jQuery('#select_room_child_'+roomRateId).attr('disabled', false);
-      jQuery('#select_room_number_'+roomRateId).attr('disabled', false);
-      jQuery('#select_room_rate_'+roomRateId).attr('disabled', false);
-    } else {
-      jQuery('#select_room_adult_'+roomRateId).attr('disabled', 'disabled');
-      jQuery('#select_room_child_'+roomRateId).attr('disabled', 'disabled');
-      jQuery('#select_room_number_'+roomRateId).attr('disabled', 'disabled');
-      jQuery('#select_room_rate_'+roomRateId).attr('disabled', 'disabled');
-    }
-  });*/
 </script>
 <?php
 echo $this->element('frontfooter');
