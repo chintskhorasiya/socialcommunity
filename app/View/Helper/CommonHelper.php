@@ -48,7 +48,7 @@ class CommonHelper extends AppHelper {
     }
 
     public function test(){
-        return "test...";
+        return "test...";   
     }
 
     public function getCityName($city_id)
@@ -66,6 +66,14 @@ class CommonHelper extends AppHelper {
         $statedata = $State->find('first', array('conditions' => array('id'=>$state_id)));
         $state_name = $statedata['State']['name'];
         return $state_name; 
+    }
+
+    public function getProfName($prof_id){
+        App::import("Model", "Proffession");  
+        $Proffession = new Proffession();  
+        $proffessiondata = $Proffession->find('first', array('conditions' => array('id'=>$prof_id)));
+        $prof_name = $proffessiondata['Proffession']['name'];
+        return $prof_name; 
     }
 
 }

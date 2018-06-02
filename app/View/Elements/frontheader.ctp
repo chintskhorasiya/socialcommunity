@@ -12,7 +12,7 @@
 				</button>
 				<!-- logo -->
 				<div class="logo">
-					<a href="#"><img src="<?=DEFAULT_URL?>img/logo.png" /></a>
+					<a href="<?=DEFAULT_URL?>"><img src="<?=DEFAULT_URL?>img/logo.png" /></a>
 					<h2>શ્રી જનોડ એકડા વિશા ખડાયતા પ્રગતિ મંડળ</h2>
 				</div>
 				<!-- //logo -->
@@ -53,7 +53,7 @@
 								  <li><a href="<?=DEFAULT_URL.'executive-committee'?>"><span>Executive Committee</span></a></li>
 								  <li><a href="<?=DEFAULT_URL.'advisory-committee'?>"><span>Advisory Committee</span></a></li>
 								  <li><a href="<?=DEFAULT_URL.'yuva-committee'?>"><span>Yuva Committee</span></a></li>
-								  <li><a href="#"><span>Member Directory</span></a></li>
+								  <li><a href="<?=DEFAULT_URL.'member-directory'?>"><span>Member Directory</span></a></li>
 							</ul>
 						</li>
 						<li><a href="<?=DEFAULT_URL.'donation-facility'?>">Donation Facility</a> </li> 
@@ -62,8 +62,8 @@
 								<b class="caret"></b>
 							</a>
 							<ul class="dropdown-menu agile_short_dropdown">
-								  <li><a href="#"><span>Matrimonial List</span></a></li>
-								  <li><a href="#"><span>Matrimonial Status</span></a></li> 
+								  <li><a href="<?=DEFAULT_URL.'matrimonial-list'?>"><span>Matrimonial List</span></a></li>
+								  <!-- <li><a href="#"><span>Matrimonial Status</span></a></li>  -->
 							</ul>
 						</li>
 						<li><a href="<?=DEFAULT_URL.'donors-list'?>">Donors List</a> </li>

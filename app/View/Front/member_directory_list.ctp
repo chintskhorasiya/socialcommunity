@@ -19,10 +19,7 @@ echo $this->element('frontheader');
 	<div class="container">
 		<h1 class="title">Member <span>Directory</span></h1>
 		<?php
-		$states = array();
-		foreach ($members_data as $members_data_key => $member_data) {
-			$states[] = $member_data['Member']['state'];
-		}
+		echo $this->Form->create('MembersSearch', array('url' => array('controller' => 'front', 'action' => 'member_directory_list')));
 		?>
 		<div class="search-section">
 			<div class="col-md-4" style="padding-bottom: 10px;">
@@ -31,7 +28,12 @@ echo $this->element('frontheader');
 				   <option>Select</option>
 				   <?php
 				   foreach ($states as $state) {
-				   		echo '<option value="'.$state.'">'.$this->Common->getStateName($state).'</option>';
+				   		if($this->Session->read('front_member_directory_state') == $state){
+				   			$selectedStateStr = 'selected="selected"';
+				   		} else {
+				   			$selectedStateStr = '';
+				   		}
+				   		echo '<option '.$selectedStateStr.' value="'.$state.'">'.$this->Common->getStateName($state).'</option>';
 				   }
 				   ?>
 				</select>
@@ -47,7 +49,7 @@ echo $this->element('frontheader');
 				<!-- <select class="form-control" name=" " type="text" required>
 				   <option>Select</option> 
 				</select> -->
-				<input type="text" class="form-control" name="search_area" />
+				<input type="text" class="form-control" name="search_area" value="<?=$this->Session->read('front_member_directory_area');?>" />
 			</div> 
 			 
 			<div class="col-md-1" style="padding-bottom: 10px;"> 
@@ -56,7 +58,10 @@ echo $this->element('frontheader');
 				 </div>
 			</div>
 			<div class="clear"></div>
-		</div>	
+		</div>
+		<?php
+		echo $this->Form->end();
+		?>
 		
 		<div class="clear"></div>
 		
@@ -134,6 +139,25 @@ echo $this->element('frontheader');
 		    });
 
 		});*/
+		var member_state = jQuery('#MemberState').val();
+		if(member_state != ''){
+			var state = member_state;
+
+			var postData = {
+				"state_id":state
+          	};
+
+		    $.ajax({
+		        url: "<?=DEFAULT_URL?>get-cities",
+		        type: "POST",
+		        data: {myData:postData},
+		        success: function(data)
+		         {
+		          //alert(data);
+		          jQuery('#MemberCity').html(data);
+		         },
+		    });
+		}
 
 		jQuery('#MemberState').change(function(){
 			console.log(jQuery(this).val());

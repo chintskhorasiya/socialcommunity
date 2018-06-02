@@ -385,8 +385,92 @@ class FrontController extends AppController
     {
         $this->loadmodel('Member');
 
+        if(isset($this->data) && count($this->data)>0)
+        {
+            //$this->pre($this->data);exit;
+
+            //$this->pre($this->request->data);exit;
+            $search_state = $this->data['search_state'];
+            $search_city = $this->data['search_city'];
+            $search_area = $this->data['search_area'];
+            //var_dump($search_state);
+            //var_dump($search_city);
+            //var_dump($search_area);
+            if(!empty($search_state) && empty($search_city) && empty($search_area)){
+                //echo "1111111111";exit;
+                $conditions[] = array(
+                    "Member.state" => $search_state
+                );
+                $this->Session->write('front_member_directory_state', $search_state);
+                $this->Session->delete('front_member_directory_city');
+                $this->Session->delete('front_member_directory_area');
+
+            } elseif(!empty($search_state) && !empty($search_city) && empty($search_area)){
+                //echo "2222222";exit;
+                $conditions[] = array(
+                    'AND' => array(
+                        "Member.state" => $search_state,
+                        "Member.city" => $search_city
+                    )
+                );
+                $this->Session->write('front_member_directory_state', $search_state);
+                $this->Session->write('front_member_directory_city', $search_city);
+                $this->Session->delete('front_member_directory_area');
+
+            } elseif(!empty($search_state) && empty($search_city) && !empty($search_area)){
+                //echo "3333333333";exit;
+                $conditions[] = array(
+                    'AND' => array(
+                        "Member.state" => $search_state,
+                        "Member.area like" => "%".$search_area."%"
+                    )
+                );
+                $this->Session->write('front_member_directory_state', $search_state);
+                $this->Session->delete('front_member_directory_city');
+                $this->Session->write('front_member_directory_area', $search_area);
+
+            } elseif(!empty($search_state) && !empty($search_city) && !empty($search_area)){
+                //echo "44444444444444444";exit;
+                $conditions[] = array(
+                    'AND' => array(
+                        "Member.state" => $search_state,
+                        "Member.city" => $search_city,
+                        "Member.area like" => "%".$search_area."%"
+                    )
+                );
+                $this->Session->write('front_member_directory_state', $search_state);
+                $this->Session->write('front_member_directory_city', $search_city);
+                $this->Session->write('front_member_directory_area', $search_area);
+
+            } elseif(empty($search_state) && !empty($search_city) && empty($search_area)){
+                //echo "55555555555";exit;
+                $conditions = array();
+                $this->Session->delete('front_member_directory_state');
+                $this->Session->delete('front_member_directory_city');
+                $this->Session->delete('front_member_directory_area');
+            } /*else {
+                echo "666666666666";exit;
+            }*/
+
+            if(count($conditions) > 0)
+            {
+                $this->Session->write('searchMDLCond', $conditions);
+            }
+            //$this->Session->write('search_key', $search_key);
+        }
+
+        $mainConditions = array('User.status IN'=> array(1));
+
+        if ($this->Session->check('searchMDLCond')) {
+            $conditions = $this->Session->read('searchMDLCond');
+            $allConditions = array_merge($mainConditions, $conditions);
+        } else {
+            $conditions = null;
+            $allConditions = array_merge($mainConditions, $conditions);
+        }
+
         $this->paginate = array(
-            'conditions' => array('User.status IN'=> array(1)),
+            'conditions' => $allConditions,
             'joins' => array(
                 array(
                     'alias' => 'User',
@@ -399,12 +483,161 @@ class FrontController extends AppController
             'order' => array('id' => 'desc')
         );
 
+        $default_members_data = $this->Member->find('all', array('conditions' => array('User.status IN'=> array(1)), 'joins' => array(
+                array(
+                    'alias' => 'User',
+                    'table' => 'users',
+                    'type' => 'INNER',
+                    'conditions' => '`User`.`member_id` = `Member`.`id`'
+                )
+            )));
+
+        $states = array();
+        foreach ($default_members_data as $members_data_key => $member_data) {
+            if(!in_array($member_data['Member']['state'], $states)){
+                $states[] = $member_data['Member']['state'];
+            }
+        }
+
+        //$this->pre($default_members_data);exit;
+
         $get_members_data = $this->paginate('Member');
 
         //$this->pre($get_members_data);exit;
 
         $this->set('cms_page_title', 'Member Directory');
         $this->set('members_data', $get_members_data);
+        $this->set('states', $states);
+    }
+
+    public function matrimonial_list()
+    {
+        $this->loadmodel('Member');
+
+        if(isset($this->data) && count($this->data)>0)
+        {
+            //$this->pre($this->data);exit;
+
+            $search_proffession = $this->data['search_proffession'];
+            $search_gender = $this->data['search_gender'];
+            $search_age = $this->data['search_age'];
+
+            if(!empty($search_proffession) && empty($search_gender) && empty($search_age)){
+                
+                $conditions[] = array(
+                    "Member.proffession" => $search_proffession
+                );
+
+                $this->Session->write('front_matrimonial_list_proffession', $search_proffession);
+                $this->Session->delete('front_matrimonial_list_gender');
+                $this->Session->delete('front_matrimonial_list_age');
+
+            } elseif(!empty($search_proffession) && !empty($search_gender) && empty($search_age)){
+                
+                $conditions[] = array('AND' => 
+                    array(
+                        "Member.proffession" => $search_proffession,
+                        "Member.gender" => $search_gender
+                    )
+                );
+
+                $this->Session->write('front_matrimonial_list_proffession', $search_proffession);
+                $this->Session->write('front_matrimonial_list_gender', $search_gender);
+                $this->Session->delete('front_matrimonial_list_age');
+
+            } elseif(!empty($search_proffession) && !empty($search_gender) && !empty($search_age)){
+                
+                $conditions[] = array('AND' => 
+                    array(
+                        "Member.proffession" => $search_proffession,
+                        "Member.gender" => $search_gender,
+                        "Member.age BETWEEN ".$search_age  
+                    )
+                );
+
+                $this->Session->write('front_matrimonial_list_proffession', $search_proffession);
+                $this->Session->write('front_matrimonial_list_gender', $search_gender);
+                $this->Session->write('front_matrimonial_list_age', $search_age);
+
+            } elseif(empty($search_proffession) && !empty($search_gender) && empty($search_age)){
+                
+                $conditions[] = array(
+                    "Member.gender" => $search_gender
+                );
+
+                $this->Session->delete('front_matrimonial_list_proffession');
+                $this->Session->write('front_matrimonial_list_gender', $search_gender);
+                $this->Session->delete('front_matrimonial_list_age');
+
+            } elseif(empty($search_proffession) && empty($search_gender) && empty($search_age)){
+                
+                $conditions[] = array();
+
+                $this->Session->delete('front_matrimonial_list_proffession');
+                $this->Session->delete('front_matrimonial_list_gender');
+                $this->Session->delete('front_matrimonial_list_age');
+
+            } 
+
+            if(count($conditions) > 0)
+            {
+                $this->Session->write('searchMLCond', $conditions);
+            }
+        }
+
+        $mainConditions = array('User.status IN'=> array(1), 'Member.for_matrimonial' => '1');
+
+        if ($this->Session->check('searchMLCond')) {
+            $conditions = $this->Session->read('searchMLCond');
+            $allConditions = array_merge($mainConditions, $conditions);
+        } else {
+            $allConditions = $mainConditions;
+        }
+
+        $this->paginate = array(
+            'conditions' => $allConditions,
+            'joins' => array(
+                array(
+                    'alias' => 'User',
+                    'table' => 'users',
+                    'type' => 'INNER',
+                    'conditions' => '`User`.`member_id` = `Member`.`id`'
+                )
+            ),
+            //'limit' => 2,
+            'order' => array('id' => 'desc')
+        );
+
+        $get_members_data = $this->paginate('Member');
+
+        //$this->pre($get_members_data);exit;
+
+        $default_members_data = $this->Member->find('all', array('conditions' => $mainConditions, 'joins' => array(
+            array(
+                'alias' => 'User',
+                'table' => 'users',
+                'type' => 'INNER',
+                'conditions' => '`User`.`member_id` = `Member`.`id`'
+            )
+        )));
+
+        //$this->pre($default_members_data);exit;
+
+        //$states = array();
+        $profs = array();
+        foreach ($default_members_data as $members_data_key => $member_data) {
+            /*if(!in_array($member_data['Member']['state'], $states)){
+                $states[] = $member_data['Member']['state'];
+            }*/
+            if(!in_array($member_data['Member']['proffession'], $profs)){
+                $profs[] = $member_data['Member']['proffession'];
+            }
+        }
+
+        $this->set('cms_page_title', 'Matrimonial List');
+        $this->set('members_data', $get_members_data);
+        //$this->set('states', $states);
+        $this->set('profs', $profs);
     }
 
     public function news_events_listing()

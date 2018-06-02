@@ -100,6 +100,11 @@
 	);
 
 	Router::connect(
+	    '/matrimonial-list/*',
+	    array('controller' => 'front', 'action' => 'matrimonial_list')
+	);
+
+	Router::connect(
 	    '/news/*',
 	    array('controller' => 'front', 'action' => 'news_listing')
 	);

@@ -160,7 +160,7 @@ echo $this->element('frontheader');
 							}
 							?>
 							<div class="col-md-4 col-xs-4 sectopn-main_gallery_grid <?=$gal_count?>">
-								<a href="#" class="lsb-preview" data-lsb-group="header">
+								<a href="<?=DEFAULT_GALLERY_IMAGE_URL.$gallery['Galleryimage']['source']?>" class="lsb-preview" data-lsb-group="header">
 									<div class="sectopn-main_news_grid">
 										<img src="<?=DEFAULT_GALLERY_IMAGE_URL.'front_'.$gallery['Galleryimage']['source']?>" alt="<?=$gallery['Galleryimage']['title']?>" class="img-responsive">
 										<div class="sectopn-main_news_grid_pos">

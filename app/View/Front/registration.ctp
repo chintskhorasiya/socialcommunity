@@ -112,7 +112,13 @@ echo $this->element('frontheader');
 					    	echo $this->Form->input('area', array('class' => 'form-control', 'div' => 'col-md-4'));
 					    	echo $this->Form->input('hobbies', array('class' => 'form-control', 'div' => 'col-md-4'));
 					    	echo $this->Form->input('relative_member_no', array('class' => 'form-control', 'div' => 'col-md-4'));
+
 					    	?>
+					    	<div class="col-md-12" style="padding-bottom: 10px;">
+						    	<div class="checkbox">
+								  <label><input id="MemberForMatrimonial" name="data[Member][for_matrimonial]" value="1" type="checkbox">Yes, I want to register for matrimonial also.</label>
+								</div> 
+							</div>
 							<!--
 							<div class="col-md-12" style="padding-bottom: 10px;">
 							    <h3>Add Family Detail</h3>

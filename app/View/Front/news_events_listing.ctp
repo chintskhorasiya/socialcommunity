@@ -9,7 +9,7 @@ echo $this->element('frontheader');
 				<a href="<?=DEFAULT_URL?>">Home</a>
 				<span>/ </span>
 			</li>
-			<li>Executive Committee</li>
+			<li>News and Events</li>
 		</ul>
 	</div>
   </div>

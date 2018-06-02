@@ -43,7 +43,7 @@ class AppController extends Controller {
 
     function beforeFilter() {
 
-        if($this->params['controller'] == "pages" || $this->params['controller'] == "contacts" || $this->params['controller'] == "homemodules" || $this->params['controller'] == "banners" || $this->params['controller'] == "newsevents" || $this->params['controller'] == "advertises" || $this->params['controller'] ==  "galleryimages" || $this->params['controller'] == "committeemembers" || $this->params['controller'] == "clients" || $this->params['controller'] == "infrastructures" || $this->params['controller'] == "videos" || $this->params['controller'] == "galleries" || $this->params['controller'] == "epapers" || $this->params['controller'] == "polls" || $this->params['controller'] == "pricelists" || $this->params['controller'] == "marketingprices" || $this->params['controller'] == "settings" || $this->params['controller'] == "donations" || $this->params['controller'] == "donationdetails")
+        if($this->params['controller'] == "pages" || $this->params['controller'] == "contacts" || $this->params['controller'] == "homemodules" || $this->params['controller'] == "banners" || $this->params['controller'] == "newsevents" || $this->params['controller'] == "advertises" || $this->params['controller'] ==  "galleryimages" || $this->params['controller'] == "committeemembers" || $this->params['controller'] == "clients" || $this->params['controller'] == "infrastructures" || $this->params['controller'] == "videos" || $this->params['controller'] == "galleries" || $this->params['controller'] == "epapers" || $this->params['controller'] == "polls" || $this->params['controller'] == "pricelists" || $this->params['controller'] == "marketingprices" || $this->params['controller'] == "settings" || $this->params['controller'] == "donations" || $this->params['controller'] == "members" || $this->params['controller'] == "donationdetails")
         {
             $this->checklogin();
         }
@@ -56,7 +56,7 @@ class AppController extends Controller {
 
         //$this->pre($this->params);
 
-        if($this->params['controller'] == "pages" || $this->params['controller'] == "contacts" || $this->params['controller'] == "homemodules" || $this->params['controller'] == "banners" || $this->params['controller'] == "newsevents" || $this->params['controller'] == "advertises" || $this->params['controller'] ==  "galleryimages" || $this->params['controller'] == "committeemembers" || $this->params['controller'] == "clients" || $this->params['controller'] == "infrastructures" || $this->params['controller'] == "videos" || $this->params['controller'] == "galleries" || $this->params['controller'] == "epapers" || $this->params['controller'] == "polls" || $this->params['controller'] == "pricelists" || $this->params['controller'] == "marketingprices" || $this->params['controller'] == "settings" || $this->params['controller'] == "donations" || $this->params['controller'] == "donationdetails")
+        if($this->params['controller'] == "pages" || $this->params['controller'] == "contacts" || $this->params['controller'] == "homemodules" || $this->params['controller'] == "banners" || $this->params['controller'] == "newsevents" || $this->params['controller'] == "advertises" || $this->params['controller'] ==  "galleryimages" || $this->params['controller'] == "committeemembers" || $this->params['controller'] == "clients" || $this->params['controller'] == "infrastructures" || $this->params['controller'] == "videos" || $this->params['controller'] == "galleries" || $this->params['controller'] == "epapers" || $this->params['controller'] == "polls" || $this->params['controller'] == "pricelists" || $this->params['controller'] == "marketingprices" || $this->params['controller'] == "settings" || $this->params['controller'] == "donations" || $this->params['controller'] == "members" || $this->params['controller'] == "donationdetails")
         {
             $pagenames = $this->params['controller'].'/'.$this->params['action'];
         }
@@ -155,6 +155,8 @@ class AppController extends Controller {
             'admin_dashboard'=>'Dashboard',
             'admin_editprofile'=>'Edit Profile',
             'admin_change_password'=>'Change Password',
+            'member_directory_list'=>'Member Directory',
+            'matrimonial_list'=>'Matrimonial List',
             'registration'=>'Registration',
             'forgot_password'=>'Forgot Password',
             'homemodules/admin_search'=>'Searched Home Modules List',
@@ -181,6 +183,10 @@ class AppController extends Controller {
             'committeemembers/admin_lists'=>'Committee Members List',
             'committeemembers/admin_add'=>'Add Committee Member',
             'committeemembers/admin_edit'=>'Edit Committee Member',
+            'members/admin_search'=>'Searched Members List',
+            'members/admin_lists'=>'Members List',
+            'members/admin_add'=>'Add Member',
+            'members/admin_edit'=>'Edit Member',
             'donations/admin_search'=>'Searched Donors List',
             'donations/admin_lists'=>'Donors List',
             'donations/admin_add'=>'Add Donor',
@@ -216,6 +222,7 @@ class AppController extends Controller {
             'news_search_results'=>'News Search Results',
             'settings/admin_general'=>'General Settings',
             'contacts/admin_edit'=>'Contacts Settings',
+            'donationdetails/admin_edit'=>'Donations Settings',
             'galleries/admin_search'=>'Searched Galleries List',
             'galleries/admin_lists'=>'Galleries List',
             'galleries/admin_add'=>'Add Gallery',
