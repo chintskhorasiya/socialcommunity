@@ -60,6 +60,11 @@
 	);
 
 	Router::connect(
+	    '/news-events-details/*',
+	    array('controller' => 'front', 'action' => 'news_events_details')
+	);
+
+	Router::connect(
 	    '/donation-facility/*',
 	    array('controller' => 'front', 'action' => 'donation_facility')
 	);
@@ -182,6 +187,21 @@
 	Router::connect(
 	    '/marketing-app/*',
 	    array('controller' => 'front', 'action' => 'marketing_app')
+	);
+
+	Router::connect(
+	    '/forgot-password/*',
+	    array('controller' => 'front', 'action' => 'forgot_password')
+	);
+
+	Router::connect(
+	    '/change-password/*',
+	    array('controller' => 'front', 'action' => 'change_password')
+	);
+
+	Router::connect(
+	    '/edit-profile/*',
+	    array('controller' => 'front', 'action' => 'edit_profile')
 	);
 
     /*Router::connect(

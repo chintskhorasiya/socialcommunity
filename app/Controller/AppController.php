@@ -265,6 +265,13 @@ class AppController extends Controller {
         }
     }
 
+    function checkmemberlogin(){
+        if ($this->Session->check('member_login') !== true) {
+            $this->redirect(DEFAULT_URL);
+            exit();
+        }        
+    }
+
     //Function for check admin session
     function checkadminlogin() {
         // if the admin session hasn't been set  3
@@ -537,6 +544,49 @@ class AppController extends Controller {
     }
 
     function emailfooter() {
+
+        $this->loadmodel('Setting');
+        $this->loadmodel('Contact');
+        $GeneralSettingsData = $this->Setting->find('all', array('conditions'=>array('status'=>1), 'order' => 'id DESC'));
+
+        if(!empty($GeneralSettingsData)){
+            $social_data = array();
+            foreach ($GeneralSettingsData as $g_setting_num => $g_setting_data)
+            {
+                if(!empty($g_setting_data['Setting']['key']))
+                {
+                    $social_data[$g_setting_data['Setting']['key']] = $g_setting_data['Setting']['value'];
+                }
+            }
+        } else {
+            $social_data = array();
+            $social_data['facebook'] = '';
+            $social_data['google'] = '';
+            $social_data['youtube'] = '';
+            $social_data['twitter'] = '';
+        }
+
+        $ContactsData = $this->Contact->find('all', array('conditions'=>array('id'=>1)));
+
+        if(!empty($ContactsData)){
+            $contact_data = array();
+            foreach ($ContactsData as $g_contact_num => $g_contact_data)
+            {
+                $contact_data['address'] = $g_contact_data['Contact']['address'];
+                $contact_data['phone'] = $g_contact_data['Contact']['phone'];
+                $contact_data['mobile'] = $g_contact_data['Contact']['mobile'];
+                $contact_data['email'] = $g_contact_data['Contact']['email'];
+                $contact_data['mapcode'] = $g_contact_data['Contact']['mapcode'];
+            }
+        } else {
+            $contact_data = array();
+            $contact_data['address'] = '';
+            $contact_data['phone'] = '';
+            $contact_data['mobile'] = '';
+            $contact_data['email'] = '';
+            $contact_data['mapcode'] = '';
+        }
+
         $content = '    <tr>
                             <td height="10"></td>
                         </tr>
@@ -544,17 +594,17 @@ class AppController extends Controller {
                             <td style="font-family:Verdana, Arial, Helvetica, sans-serif;color:#333;font-size:12px;">
                                 Thanks & Regards,
                                 <br/>
-                                Mobile No: +91 8488872493
+                                Mobile No: '.$contact_data['phone'].'
                                 <br/>
                                 Website :
-                                <a href="#" style="color:#01a0e4;text-decoration:none;">www.bhagyagold.com</a>
+                                <a href="'.DEFAULT_URL.'" style="color:#01a0e4;text-decoration:none;">'.DEFAULT_URL.'</a>
                                 <br/>
                                 <br/>
-                                Facebook : <a href="#" style="color:#01a0e4;text-decoration:none;" target="_blank">https://www.facebook.com/bhagyagold</a>
+                                Facebook : <a href="'.$social_data['facebook'].'" style="color:#01a0e4;text-decoration:none;" target="_blank">'.$social_data['facebook'].'</a>
                                 <br/>
-                                Twitter : <a href="#" style="color:#01a0e4;text-decoration:none;" target="_blank">https://twitter.com/bhagyagold</a>
+                                Twitter : <a href="'.$social_data['twitter'].'" style="color:#01a0e4;text-decoration:none;" target="_blank">'.$social_data['twitter'].'</a>
                                 <br/>
-                                Google Plus : <a href="#" style="color:#01a0e4;text-decoration:none;" target="_blank">https://plus.google.com/bhagyagold</a>
+                                Google Plus : <a href="'.$social_data['google'].'" style="color:#01a0e4;text-decoration:none;" target="_blank">'.$social_data['google'].'</a>
                             </td>
                         </tr>
                     </table>
@@ -562,7 +612,7 @@ class AppController extends Controller {
             </tr>
             <table border="0" cellpadding="0" cellspacing="0" width="100%">
                 <tr>
-                    <td style="font-family:Verdana, Arial, Helvetica, sans-serif;font-size:12px; padding-bottom:15px; padding-top:15px; border-top:1px solid #ccc;text-align:center;background:#02a0e7;color:#fff;"> &copy; 2016 <a href="#" style="color:#fff;text-decoration:none;">www.bhagyagold.com</a></td>
+                    <td style="font-family:Verdana, Arial, Helvetica, sans-serif;font-size:12px; padding-bottom:15px; padding-top:15px; border-top:1px solid #ccc;text-align:center;background:#02a0e7;color:#fff;"> &copy; '.date('Y').' <a href="'.DEFAULT_URL.'" style="color:#fff;text-decoration:none;">'.DEFAULT_URL.'</a></td>
                 </tr>
             </table>
         </table>';
@@ -745,10 +795,27 @@ class AppController extends Controller {
 
         $content .= $this->emailfooter();
 
-//        echo $content;
-//        exit;
+        //echo $content;
+        //exit;
 
-        $sendmail = $this->Email->send($content); // if $sendmail=1 then send successfully
+        $headers = "From:" . $this->Email->from . "\r\n";
+        /* *
+        if ($email_cc != '' && $email_cc != 'NULL') {
+            $headers .= "Cc:" . trim($email_cc) . "\r\n";
+        }
+        if ($email_bcc != '' && $email_bcc != 'NULL') {
+            $headers .= "Bcc:" . trim($email_bcc) . "\r\n";
+        }
+        if ($email_reply_to != '' && $email_reply_to != 'NULL') {
+            $headers .= "Reply-To:" . trim($email_reply_to) . "\r\n";
+        }
+        /* */
+
+        $headers .= 'MIME-Version: 1.0' . "\r\n";
+        $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+
+        //$sendmail = $this->Email->send($content); // if $sendmail=1 then send successfully
+        $sendmail = mail($this->Email->to, $this->Email->subject, $content, $headers,'-fsupport@seawindsolution.com');
         return $sendmail;
     }
     function check_login_user($userid)

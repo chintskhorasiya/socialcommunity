@@ -1,6 +1,8 @@
 <?php
 if(!empty($this->Session->read('front_member_directory_city'))) {
 	$selectedCity = $this->Session->read('front_member_directory_city');
+} elseif(!empty($current_city)) {
+	$selectedCity = $current_city;
 } else {
 	$selectedCity = '';
 }

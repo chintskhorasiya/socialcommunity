@@ -38,13 +38,13 @@ echo $this->element('frontheader');
                                 <input class="form-control" name="data[User][password]" type="password" required />
                             </div>
 							<div class="col-md-12" style="padding-bottom: 10px;">
-							   <p><a href="forgot.html">Forgot your password?</a></p>
+							   <p><a href="<?=DEFAULT_URL?>forgot-password">Forgot your password?</a></p>
                             </div>
 							 
                         </div> 
 						<div class="ab_button">
 						<input type="submit" class="btn btn-primary btn-lg hvr-underline-from-left" value="Login">
-						<button class="btn btn-primary btn-lg hvr-underline-from-left" value="Register"><a href="register.html">Register</a></button>
+						<a class="btn btn-primary btn-lg hvr-underline-from-left" href="<?=DEFAULT_URL?>registration">Register</a>
 					     </div> 
 				 </form>
 			 </div>

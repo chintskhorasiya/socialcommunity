@@ -24,9 +24,9 @@ echo $this->element('frontheader');
 		foreach ($newsevents_data as $newsevents_data_key => $newsevent) {
 			?>
 			<div class="col-md-4 exce-grid1-mmstyle">
-				<a href=""><img src="<?=DEFAULT_NEWSEVENTS_IMAGE_URL.'front_'.$newsevent['Newsevent']['source']?>" alt="<?=$newsevent['Newsevent']['title']?>"></a>
+				<a href="<?=DEFAULT_URL.'news-events-details/'.$newsevent['Newsevent']['id']?>"><img src="<?=DEFAULT_NEWSEVENTS_IMAGE_URL.'front_'.$newsevent['Newsevent']['source']?>" alt="<?=$newsevent['Newsevent']['title']?>"></a>
 				<div class="grid-ec1">
-					<a href=""><h3><?=$newsevent['Newsevent']['title']?></h3></a>
+					<a href="<?=DEFAULT_URL.'news-events-details/'.$newsevent['Newsevent']['id']?>"><h3><?=$newsevent['Newsevent']['title']?></h3></a>
 					<p><?=mb_substr($newsevent['Newsevent']['page'], 0, 45)?></p>
 					 
 				</div>

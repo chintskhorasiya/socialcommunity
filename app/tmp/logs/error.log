@@ -22332,3 +22332,1933 @@ Request URL: /cakephp/communitysocial/img/IMG_202163.jpg
 Stack Trace:
 #0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2018-06-11 16:35:16 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/mobilepopup/main1.css
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-11 16:35:16 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/mobilepopup/main1.css
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-11 16:37:30 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/mobilepopup/main1.css
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-11 16:37:31 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/mobilepopup/main1.css
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-11 16:42:03 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/mobilepopup/main1.css
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-11 16:42:03 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/mobilepopup/main1.css
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-13 10:15:47 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/mobilepopup/main1.css
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-13 10:15:47 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/mobilepopup/main1.css
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-13 10:33:35 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/mobilepopup/main1.css
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-13 10:33:35 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/mobilepopup/main1.css
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-13 10:53:47 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/mobilepopup/main1.css
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-13 10:53:47 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/mobilepopup/main1.css
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-13 11:15:45 Error: [MissingControllerException] Controller class Forgot.htmlController could not be found.
+Exception Attributes: array (
+  'class' => 'Forgot.htmlController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/forgot.html
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-13 11:34:51 Error: [MissingControllerException] Controller class ForgotPasswordController could not be found.
+Exception Attributes: array (
+  'class' => 'ForgotPasswordController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/forgot_password
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-13 11:35:20 Error: [MissingControllerException] Controller class ForgotPasswordController could not be found.
+Exception Attributes: array (
+  'class' => 'ForgotPasswordController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/forgot_password
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-13 11:41:28 Error: [MissingControllerException] Controller class Forgot.htmlController could not be found.
+Exception Attributes: array (
+  'class' => 'Forgot.htmlController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/forgot.html
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-13 11:43:34 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/mobilepopup/main1.css
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-13 11:43:34 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/mobilepopup/main1.css
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-13 11:43:37 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/mobilepopup/main1.css
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-13 11:43:37 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/mobilepopup/main1.css
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-13 12:30:12 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/mobilepopup/main1.css
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-13 12:30:13 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/mobilepopup/main1.css
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-13 13:32:08 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/mobilepopup/main1.css
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-13 13:32:08 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/mobilepopup/main1.css
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-13 13:38:02 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/mobilepopup/main1.css
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-13 13:38:02 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/mobilepopup/main1.css
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-13 13:38:08 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/img/IMG_202163.jpg
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-13 13:38:12 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/mobilepopup/main1.css
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-13 13:38:12 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/mobilepopup/main1.css
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-13 13:38:14 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/mobilepopup/main1.css
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-13 13:38:14 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/mobilepopup/main1.css
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-13 13:38:20 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/img/IMG_202163.jpg
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-13 13:38:24 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/mobilepopup/main1.css
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-13 13:38:24 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/mobilepopup/main1.css
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-13 13:40:27 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/mobilepopup/main1.css
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-13 13:40:27 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/mobilepopup/main1.css
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-13 13:40:55 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/mobilepopup/main1.css
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-13 13:40:55 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/mobilepopup/main1.css
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-13 13:49:01 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/mobilepopup/main1.css
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-13 13:49:01 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/mobilepopup/main1.css
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-13 13:49:09 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/mobilepopup/main1.css
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-13 13:49:10 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/mobilepopup/main1.css
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-13 13:51:00 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/img/IMG_202163.jpg
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-13 13:52:07 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/img/IMG_202163.jpg
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-13 13:55:28 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/img/email_header_part.jpg
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-13 13:56:52 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/img/email_header_part.jpg
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-13 13:57:17 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/img/email_header_part.jpg
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-13 15:01:23 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/mobilepopup/main1.css
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-13 15:01:24 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/mobilepopup/main1.css
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-13 15:02:09 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/mobilepopup/main1.css
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-13 15:02:09 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/mobilepopup/main1.css
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-13 15:08:10 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/img/email_header_part.jpg
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-13 15:08:18 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/img/IMG_202163.jpg
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-13 15:08:22 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/img/clockface.png
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-13 15:08:22 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/img/sechand.png
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-13 15:08:22 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/img/minhand.png
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-13 15:08:22 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/img/hourhand.png
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-13 15:13:58 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/img/email_header_part.jpg
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-13 15:14:18 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/img/email_header_part.jpg
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-13 15:15:32 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/img/email_header_part.jpg
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-13 15:15:42 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/img/email_header_part.jpg
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-13 15:15:58 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/img/email_header_part.jpg
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-13 15:16:18 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/img/email_header_part.jpg
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-13 15:16:42 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/img/email_header_part.jpg
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-13 15:18:09 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/img/email_header_part.jpg
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-13 15:18:48 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/img/email_header_part.jpg
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-13 15:56:43 Error: [SocketException] 
+Request URL: /cakephp/communitysocial/change-password
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/lib/Cake/Network/Email/MailTransport.php(51): MailTransport->_mail('harsh.patel@mai...', 'Password change...', '\n              ...', 'From: chintan@s...', NULL)
+#1 /var/www/cakephp/communitysocial/lib/Cake/Network/Email/CakeEmail.php(1173): MailTransport->send(Object(CakeEmail))
+#2 /var/www/cakephp/communitysocial/lib/Cake/Controller/Component/EmailComponent.php(346): CakeEmail->send('\r\n             ...')
+#3 /var/www/cakephp/communitysocial/app/Controller/AppController.php(801): EmailComponent->send('\r\n             ...')
+#4 /var/www/cakephp/communitysocial/app/Controller/FrontController.php(1906): AppController->email_client_changepassword('Harshal', 'harsh.patel@mai...', '123456')
+#5 [internal function]: FrontController->change_password()
+#6 /var/www/cakephp/communitysocial/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(FrontController), Array)
+#7 /var/www/cakephp/communitysocial/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/cakephp/communitysocial/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(FrontController), Object(CakeRequest))
+#9 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2018-06-13 15:58:20 Error: [SocketException] 
+Request URL: /cakephp/communitysocial/change-password
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/lib/Cake/Network/Email/MailTransport.php(51): MailTransport->_mail('harsh.patel@mai...', 'Password change...', '\n              ...', 'From: chintan@s...', NULL)
+#1 /var/www/cakephp/communitysocial/lib/Cake/Network/Email/CakeEmail.php(1173): MailTransport->send(Object(CakeEmail))
+#2 /var/www/cakephp/communitysocial/lib/Cake/Controller/Component/EmailComponent.php(346): CakeEmail->send('\r\n             ...')
+#3 /var/www/cakephp/communitysocial/app/Controller/AppController.php(801): EmailComponent->send('\r\n             ...')
+#4 /var/www/cakephp/communitysocial/app/Controller/FrontController.php(1906): AppController->email_client_changepassword('Harshal', 'harsh.patel@mai...', '123456')
+#5 [internal function]: FrontController->change_password()
+#6 /var/www/cakephp/communitysocial/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(FrontController), Array)
+#7 /var/www/cakephp/communitysocial/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/cakephp/communitysocial/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(FrontController), Object(CakeRequest))
+#9 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2018-06-13 15:58:35 Error: [SocketException] 
+Request URL: /cakephp/communitysocial/change-password
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/lib/Cake/Network/Email/MailTransport.php(51): MailTransport->_mail('harsh.patel@mai...', 'Password change...', '\n              ...', 'From: chintan@s...', NULL)
+#1 /var/www/cakephp/communitysocial/lib/Cake/Network/Email/CakeEmail.php(1173): MailTransport->send(Object(CakeEmail))
+#2 /var/www/cakephp/communitysocial/lib/Cake/Controller/Component/EmailComponent.php(346): CakeEmail->send('\r\n             ...')
+#3 /var/www/cakephp/communitysocial/app/Controller/AppController.php(801): EmailComponent->send('\r\n             ...')
+#4 /var/www/cakephp/communitysocial/app/Controller/FrontController.php(1906): AppController->email_client_changepassword('Harshal', 'harsh.patel@mai...', '123456')
+#5 [internal function]: FrontController->change_password()
+#6 /var/www/cakephp/communitysocial/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(FrontController), Array)
+#7 /var/www/cakephp/communitysocial/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/cakephp/communitysocial/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(FrontController), Object(CakeRequest))
+#9 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2018-06-13 16:06:56 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/img/email_header_part.jpg
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-13 16:07:22 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/img/email_header_part.jpg
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-13 16:07:37 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/img/email_header_part.jpg
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-13 16:08:26 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/img/email_header_part.jpg
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-13 16:08:49 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/img/email_header_part.jpg
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-13 16:09:26 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/img/email_header_part.jpg
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-13 16:12:35 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/img/email_header_part.jpg
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-13 16:12:56 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/img/email_header_part.jpg
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-13 16:40:55 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/mobilepopup/main1.css
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-13 16:40:55 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/mobilepopup/main1.css
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-13 16:41:04 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/mobilepopup/main1.css
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-13 16:41:04 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/mobilepopup/main1.css
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-13 16:58:50 Error: Fatal Error (4): syntax error, unexpected ''options'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in [/var/www/cakephp/communitysocial/app/View/Front/edit_profile.ctp, line 80]
+2018-06-13 16:58:50 Error: [FatalErrorException] syntax error, unexpected ''options'' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+Request URL: /cakephp/communitysocial/edit-profile
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/cakeph...', 80)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/cakeph...', 80, Array)
+#2 /var/www/cakephp/communitysocial/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/cakeph...', 80, Array)
+#3 /var/www/cakephp/communitysocial/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-06-13 18:11:25 Error: Fatal Error (4): syntax error, unexpected '=>' (T_DOUBLE_ARROW) in [/var/www/cakephp/communitysocial/app/View/Front/edit_profile.ctp, line 81]
+2018-06-13 18:11:25 Error: [FatalErrorException] syntax error, unexpected '=>' (T_DOUBLE_ARROW)
+Request URL: /cakephp/communitysocial/edit-profile
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/cakeph...', 81)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/cakeph...', 81, Array)
+#2 /var/www/cakephp/communitysocial/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/cakeph...', 81, Array)
+#3 /var/www/cakephp/communitysocial/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-06-13 19:06:06 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/mobilepopup/main1.css
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-13 19:06:06 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/mobilepopup/main1.css
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-13 19:06:42 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/mobilepopup/main1.css
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-13 19:06:42 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/mobilepopup/main1.css
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-15 10:29:47 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/mobilepopup/main1.css
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-15 10:29:47 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/mobilepopup/main1.css
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-15 10:31:49 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/mobilepopup/main1.css
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-15 10:31:49 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/mobilepopup/main1.css
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-15 11:09:55 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/mobilepopup/main1.css
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-15 11:09:56 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/mobilepopup/main1.css
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-15 11:10:22 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/mobilepopup/main1.css
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-15 11:10:22 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/mobilepopup/main1.css
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-15 12:36:55 Error: [CakeException] Can not determine the mimetype.
+Request URL: /cakephp/communitysocial/edit-profile
+Stack Trace:
+#0 [internal function]: Validation::mimeType(Array, Array)
+#1 /var/www/cakephp/communitysocial/lib/Cake/Model/Validator/CakeValidationRule.php(277): call_user_func_array(Array, Array)
+#2 /var/www/cakephp/communitysocial/lib/Cake/Model/Validator/CakeValidationSet.php(135): CakeValidationRule->process('photo', Array, Array)
+#3 /var/www/cakephp/communitysocial/lib/Cake/Model/ModelValidator.php(268): CakeValidationSet->validate(Array, false)
+#4 /var/www/cakephp/communitysocial/lib/Cake/Model/ModelValidator.php(99): ModelValidator->errors(Array)
+#5 /var/www/cakephp/communitysocial/lib/Cake/Model/Model.php(3469): ModelValidator->validates(Array)
+#6 /var/www/cakephp/communitysocial/app/Controller/FrontController.php(1982): Model->validates()
+#7 [internal function]: FrontController->edit_profile()
+#8 /var/www/cakephp/communitysocial/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(FrontController), Array)
+#9 /var/www/cakephp/communitysocial/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/cakephp/communitysocial/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(FrontController), Object(CakeRequest))
+#11 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2018-06-15 12:44:14 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/img/IMG_202163.jpg
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-15 12:44:16 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/img/sechand.png
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-15 12:44:16 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/img/clockface.png
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-15 12:44:16 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/img/minhand.png
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-15 12:44:16 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/img/hourhand.png
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-15 12:48:37 Error: [CakeException] Can not determine the mimetype.
+Request URL: /cakephp/communitysocial/edit-profile
+Stack Trace:
+#0 [internal function]: Validation::mimeType(Array, Array)
+#1 /var/www/cakephp/communitysocial/lib/Cake/Model/Validator/CakeValidationRule.php(277): call_user_func_array(Array, Array)
+#2 /var/www/cakephp/communitysocial/lib/Cake/Model/Validator/CakeValidationSet.php(135): CakeValidationRule->process('photo', Array, Array)
+#3 /var/www/cakephp/communitysocial/lib/Cake/Model/ModelValidator.php(268): CakeValidationSet->validate(Array, false)
+#4 /var/www/cakephp/communitysocial/lib/Cake/Model/ModelValidator.php(99): ModelValidator->errors(Array)
+#5 /var/www/cakephp/communitysocial/lib/Cake/Model/Model.php(3469): ModelValidator->validates(Array)
+#6 /var/www/cakephp/communitysocial/app/Controller/FrontController.php(1982): Model->validates()
+#7 [internal function]: FrontController->edit_profile()
+#8 /var/www/cakephp/communitysocial/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(FrontController), Array)
+#9 /var/www/cakephp/communitysocial/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/cakephp/communitysocial/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(FrontController), Object(CakeRequest))
+#11 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2018-06-15 12:57:42 Error: Fatal Error (1): Call to undefined method FrontController::data() in [/var/www/cakephp/communitysocial/app/Controller/FrontController.php, line 2009]
+2018-06-15 12:57:42 Error: [FatalErrorException] Call to undefined method FrontController::data()
+Request URL: /cakephp/communitysocial/edit-profile
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/var/www/cakeph...', 2009)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/var/www/cakeph...', 2009, Array)
+#2 /var/www/cakephp/communitysocial/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/var/www/cakeph...', 2009, Array)
+#3 /var/www/cakephp/communitysocial/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-06-15 13:11:47 Error: [CakeException] Can not determine the mimetype.
+Request URL: /cakephp/communitysocial/edit-profile
+Stack Trace:
+#0 [internal function]: Validation::mimeType(Array, Array)
+#1 /var/www/cakephp/communitysocial/lib/Cake/Model/Validator/CakeValidationRule.php(277): call_user_func_array(Array, Array)
+#2 /var/www/cakephp/communitysocial/lib/Cake/Model/Validator/CakeValidationSet.php(135): CakeValidationRule->process('photo', Array, Array)
+#3 /var/www/cakephp/communitysocial/lib/Cake/Model/ModelValidator.php(268): CakeValidationSet->validate(Array, false)
+#4 /var/www/cakephp/communitysocial/lib/Cake/Model/ModelValidator.php(99): ModelValidator->errors(Array)
+#5 /var/www/cakephp/communitysocial/lib/Cake/Model/Model.php(3469): ModelValidator->validates(Array)
+#6 /var/www/cakephp/communitysocial/app/Controller/FrontController.php(1982): Model->validates()
+#7 [internal function]: FrontController->edit_profile()
+#8 /var/www/cakephp/communitysocial/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(FrontController), Array)
+#9 /var/www/cakephp/communitysocial/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/cakephp/communitysocial/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(FrontController), Object(CakeRequest))
+#11 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2018-06-15 14:15:06 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/mobilepopup/main1.css
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-15 14:15:06 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/mobilepopup/main1.css
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-15 14:15:34 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/mobilepopup/main1.css
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-15 14:15:34 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/mobilepopup/main1.css
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-15 14:35:34 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/mobilepopup/main1.css
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-15 14:35:34 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/mobilepopup/main1.css
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-15 14:35:49 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/mobilepopup/main1.css
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-15 14:35:50 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/mobilepopup/main1.css
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-15 15:59:59 Error: [MissingControllerException] Controller class News-events-detailsController could not be found.
+Exception Attributes: array (
+  'class' => 'News-events-detailsController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/news-events-details
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-15 16:02:49 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/images/g3.jpg
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-15 16:02:49 Error: [MissingControllerException] Controller class ImagesController could not be found.
+Exception Attributes: array (
+  'class' => 'ImagesController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/images/g3.jpg
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-15 16:03:18 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/mobilepopup/main1.css
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-15 16:03:18 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/mobilepopup/main1.css
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-15 16:09:20 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/mobilepopup/main1.css
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-15 16:09:20 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/mobilepopup/main1.css
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-15 16:09:31 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/mobilepopup/main1.css
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-15 16:09:31 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/mobilepopup/main1.css
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-15 17:34:54 Error: Fatal Error (4): syntax error, unexpected '.' in [/var/www/cakephp/communitysocial/app/View/Front/news_events_details.ctp, line 24]
+2018-06-15 17:34:54 Error: [FatalErrorException] syntax error, unexpected '.'
+Request URL: /cakephp/communitysocial/news-events-details/4
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/cakeph...', 24)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/cakeph...', 24, Array)
+#2 /var/www/cakephp/communitysocial/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/cakeph...', 24, Array)
+#3 /var/www/cakephp/communitysocial/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2018-06-15 17:37:15 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/mobilepopup/main1.css
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-15 17:37:15 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/mobilepopup/main1.css
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-15 17:37:20 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/mobilepopup/main1.css
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-15 17:37:20 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/mobilepopup/main1.css
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-15 17:37:25 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/mobilepopup/main1.css
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-15 17:37:25 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/mobilepopup/main1.css
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-16 15:20:48 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/mobilepopup/main1.css
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-16 15:20:48 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/mobilepopup/main1.css
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-16 15:31:37 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/mobilepopup/main1.css
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-16 15:31:37 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/mobilepopup/main1.css
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-16 15:31:40 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/mobilepopup/main1.css
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-16 15:31:40 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/mobilepopup/main1.css
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-16 15:31:45 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/mobilepopup/main1.css
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-16 15:31:45 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/mobilepopup/main1.css
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-16 15:31:53 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/mobilepopup/main1.css
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-16 15:31:53 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/mobilepopup/main1.css
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-16 15:39:39 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/mobilepopup/main1.css
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-16 15:39:45 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/mobilepopup/main1.css
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-16 15:40:05 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/mobilepopup/main1.css
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-16 15:40:05 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/mobilepopup/main1.css
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-16 15:41:15 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/mobilepopup/main1.css
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-16 15:41:15 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/mobilepopup/main1.css
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-16 15:41:33 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/mobilepopup/main1.css
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-16 15:41:33 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/mobilepopup/main1.css
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-16 15:41:39 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/mobilepopup/main1.css
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-16 15:41:40 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/mobilepopup/main1.css
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-16 15:41:46 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/mobilepopup/main1.css
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-16 15:41:47 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/mobilepopup/main1.css
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-16 15:41:52 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/mobilepopup/main1.css
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-16 15:41:52 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/mobilepopup/main1.css
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-16 16:20:15 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/mobilepopup/main1.css
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-16 16:20:15 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/mobilepopup/main1.css
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-16 16:22:30 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/mobilepopup/main1.css
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-16 16:23:14 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/mobilepopup/main1.css
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-16 16:23:14 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/bootstrap.css.map
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-16 16:23:14 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/lsb.css.map
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-16 16:24:29 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/mobilepopup/main1.css
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-16 16:24:29 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/bootstrap.css.map
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-16 16:24:29 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/lsb.css.map
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-16 16:24:34 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/mobilepopup/main1.css
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-16 16:24:35 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/mobilepopup/main1.css
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-16 16:24:35 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/bootstrap.css.map
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-16 16:24:35 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/lsb.css.map
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-16 16:25:15 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/mobilepopup/main1.css
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-16 16:25:15 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/mobilepopup/main1.css
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-16 16:25:15 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/bootstrap.css.map
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-16 16:25:15 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/lsb.css.map
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-16 16:26:26 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/mobilepopup/main1.css
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-16 16:26:26 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/mobilepopup/main1.css
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-16 16:26:26 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/bootstrap.css.map
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-16 16:26:26 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/lsb.css.map
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-16 16:26:44 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/mobilepopup/main1.css
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-16 16:26:44 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/mobilepopup/main1.css
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-16 16:26:44 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/lsb.css.map
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-16 16:26:44 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/bootstrap.css.map
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-16 16:27:26 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/mobilepopup/main1.css
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-16 16:27:27 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/lsb.css.map
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-16 16:27:27 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/bootstrap.css.map
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-16 16:27:39 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/mobilepopup/main1.css
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-16 16:27:39 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/lsb.css.map
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-16 16:27:39 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/bootstrap.css.map
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-16 16:27:39 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/mobilepopup/main1.css
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-16 16:28:04 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/mobilepopup/main1.css
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-16 16:28:04 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/lsb.css.map
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-16 16:28:05 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/mobilepopup/main1.css
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-16 16:28:05 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/bootstrap.css.map
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-16 16:29:08 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/mobilepopup/main1.css
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-16 16:29:08 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/bootstrap.css.map
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-16 16:29:08 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/lsb.css.map
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-16 16:29:08 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/mobilepopup/main1.css
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-16 16:29:37 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/mobilepopup/main1.css
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-16 16:29:37 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/lsb.css.map
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-16 16:29:37 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/bootstrap.css.map
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-16 16:29:37 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/mobilepopup/main1.css
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-16 16:30:00 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/mobilepopup/main1.css
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-16 16:30:00 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/bootstrap.css.map
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-16 16:30:00 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/lsb.css.map
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-16 16:30:00 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/mobilepopup/main1.css
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-16 16:30:21 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/mobilepopup/main1.css
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-16 16:30:21 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/mobilepopup/main1.css
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-16 16:30:21 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/bootstrap.css.map
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-16 16:30:21 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/lsb.css.map
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-16 16:32:57 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/mobilepopup/main1.css
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-16 16:32:57 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/mobilepopup/main1.css
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-16 16:33:38 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/mobilepopup/main1.css
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-16 16:33:38 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/mobilepopup/main1.css
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-16 16:33:45 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/mobilepopup/main1.css
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-06-16 16:33:45 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/communitysocial/css/mobilepopup/main1.css
+Stack Trace:
+#0 /var/www/cakephp/communitysocial/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}

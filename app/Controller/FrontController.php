@@ -658,6 +658,28 @@ class FrontController extends AppController
         $this->set('newsevents_data', $get_newsevents_data);
     }
 
+    public function news_events_details($news_id){
+
+        $this->loadmodel('Newsevent');
+        $get_newsevents_data = $this->Newsevent->find('first', array('conditions' => array('status IN'=> array(1), 'id'=>$news_id)));
+        //$this->pre($get_newsevents_data);exit;
+        if(!empty($get_newsevents_data['Newsevent']['page']))
+        {
+            $newsevent_title = $get_newsevents_data['Newsevent']['title'];
+            $newsevent_page = $get_newsevents_data['Newsevent']['page'];
+            $newsevent_source = $get_newsevents_data['Newsevent']['source'];
+        } else {
+            $newsevent_title = '';
+            $newsevent_page = '';
+            $newsevent_source = '';
+        }
+
+        $this->set('newsevent_title', $newsevent_title);
+        $this->set('newsevent_page', $newsevent_page);
+        $this->set('newsevent_source', $newsevent_source);
+
+    }
+
     public function donation_facility()
     {
         if(isset($this->data) && count($this->data)>0)
@@ -1024,8 +1046,14 @@ class FrontController extends AppController
         if (!empty($this->data)) {
 
             $country_id = $this->data['myData']['country_id'];
+            if(!empty($this->data['myData']['current_state'])) {
+                $current_state = $this->data['myData']['current_state'];
+            } else {
+                $current_state = false;
+            }
             $this->loadmodel('State');
             $states = $this->State->find('list', array('conditions' => array('country_id' => $country_id)));
+            $this->set('current_state', $current_state);
             $this->set('states',$states); //$states
         }
     }
@@ -1035,8 +1063,14 @@ class FrontController extends AppController
         if (!empty($this->data)) {
 
             $state_id = $this->data['myData']['state_id'];
+            if(!empty($this->data['myData']['current_city'])) {
+                $current_city = $this->data['myData']['current_city'];
+            } else {
+                $current_city = false;
+            }
             $this->loadmodel('City');
             $cities = $this->City->find('list', array('conditions' => array('state_id' => $state_id)));
+            $this->set('current_city', $current_city);
             $this->set('cities',$cities); //$cities
         }
     }
@@ -1725,216 +1759,408 @@ class FrontController extends AppController
 
     }
 
-    public function live_tv(){
-        $this->set('livetv_page_title', 'Live TV');
-    }
+    public function forgot_password() {
 
-    public function marketing(){
-        $this->set('marketing_page_title', 'માર્કેટિંગ યાર્ડ ભાવ');
-        
-        //$pricelistId = $this->params['named']['pricelistId'];
-
-        $this->loadmodel('MarketingPrice');
-        $this->loadmodel('Pricelist');
-
-        if ($this->request->is('post'))
+        if(!empty($this->data))
         {
-            if(!empty($this->request->data) && isset($this->request->data) )
+            //print_r($this->data);exit;
+
+            $errorarray = array();
+            if (isset($this->data['User']['email']) && (trim($this->data['User']['email']) == '' || trim($this->data['User']['email'])=='Type here')) {
+                $errorarray['enter_email'] = ENTER_EMAIL;
+            }
+            else
             {
-                //$this->pre($this->request->data);exit; 
-
-                $search_key = trim($this->request->data['marketingpriceSearch']['searchtitle']);
-                if (!empty($search_key))
+                // For check valid email or not
+                if($this->IsEmail($this->data['User']['email'])==0)
+                    $errorarray['valid_email'] = ENTER_VALIDEMAIL;
+                else
                 {
-                    $conditions[] = array(
-                        "OR" => array(
-                            "MarketingPrice.commodityeng LIKE" => "%".$search_key."%",
-                            "MarketingPrice.commodityguj LIKE" => "%".$search_key."%",
-                            "MarketingPrice.centereng LIKE" => "%".$search_key."%",
-                            "MarketingPrice.centerguj LIKE" => "%".$search_key."%"
-                        )
-                    );
-                }
-                $this->Session->write('search_key', $search_key);
+                    $check_email = $this->User->find('all', array('conditions' => array('email like'=>$this->data['User']['email'],'user_type like'=>'member','status LIKE'=>1)));
 
-                $commodityeng = trim($this->request->data['marketingpriceSearch']['commodityeng']);
-                if (!empty($commodityeng))
-                {
-                    $conditions[] = array(
-                        "OR" => array(
-                            "MarketingPrice.commodityeng" => "".$commodityeng.""
-                        )
-                    );
-                    //$this->set('from_search',true);
+                    if(empty($check_email))
+                    {
+                        $errorarray['email_not_match'] = EMAIL_NOTFOUND;
+                    }
                 }
-                $this->Session->write('search_commodityeng', $commodityeng);
+            }
 
-                $centereng = trim($this->request->data['marketingpriceSearch']['centereng']);
-                if (!empty($centereng))
-                {
-                    $conditions[] = array(
-                        "OR" => array(
-                            "MarketingPrice.centereng" => "".$centereng.""
-                        )
-                    );
-                    //$this->set('from_search',true);
+            $this->set('errorarray',$errorarray);
+
+            if(empty($errorarray))
+            {
+                $new_pass = $this->generatePassword(PASSWORD_LIMIT);
+
+                $name = trim($check_email[0]['User']['name']);
+                $email = trim($check_email[0]['User']['email']);
+
+                //$this->email_client_forgetpass($name,$email,$new_pass);
+
+                $update_user['User']['password'] = md5($new_pass);
+                $update_user['User']['encrypt_password'] = $new_pass; //$this->encrypt_pass($new_pass);
+                $update_user['User']['id'] = $check_email[0]['User']['id'];
+
+//                $this->pre($update_user);
+//                $this->pre($this->data);
+//                exit;
+
+                $this->User->save($update_user);
+                //$this->redirect(DEFAULT_ADMINURL . 'users/forgot_password/succhange');
+
+                $subject = 'Password Reset';
+
+                $email_from = trim(ADMIN_EMAIL_FROM);        
+                $email_to =  $email;
+                $email_cc = '';
+                $email_bcc = '';
+                $email_reply_to = '';
+                
+                $content = $this->emailheader();
+                $content .= '    <tr>
+                            <th style="color:#12AFE3; text-align:left; font-size:17px; font-weight:bold; font-family:Verdana, Arial, Helvetica, sans-serif; padding:10px 0;">Hi '.$name.'</th>
+                        </tr>
+                        <tr>
+                            <td><p style="font-family:Verdana, Arial, Helvetica, sans-serif; padding-bottom:10px; margin:0; text-align:left; font-size:12px;" >Your password has been reset successfully and your new password is as below</p></td>
+                        </tr>
+                        <tr>
+                            <td style="font-family:Verdana, Arial, Helvetica, sans-serif; text-align:left; font-size:12px; padding-bottom:5px; margin:0;"><b>Email:</b> '.trim($email).'</td>
+                        </tr>
+                        <tr>
+                            <td style="font-family:Verdana, Arial, Helvetica, sans-serif; text-align:left; font-size:12px;"><b>Password:</b> '.trim($new_pass).'</td>
+                        </tr>
+                        <tr>
+                            <td><p style="font-family:Verdana, Arial, Helvetica, sans-serif; padding-bottom:10px; margin:0; text-align:left; font-size:12px;" >Now you can login with new password from <a href="'.DEFAULT_URL.'login">here</a></p></td>
+                        </tr>
+                        ';
+                //$content .= "<p>&nbsp;</p>";
+                //$content .= "<p>Thanks,</p>";
+                //$content .= "<p>".SITE_NAME."</p>";
+                //echo $content;exit;
+                $content .= $this->emailfooter();
+                $headers = "From:" . $email_from . "\r\n";
+                /* *
+                if ($email_cc != '' && $email_cc != 'NULL') {
+                    $headers .= "Cc:" . trim($email_cc) . "\r\n";
                 }
-                $this->Session->write('search_centereng', $centereng);
+                if ($email_bcc != '' && $email_bcc != 'NULL') {
+                    $headers .= "Bcc:" . trim($email_bcc) . "\r\n";
+                }
+                if ($email_reply_to != '' && $email_reply_to != 'NULL') {
+                    $headers .= "Reply-To:" . trim($email_reply_to) . "\r\n";
+                }
+                /* */
 
-                $this->Session->write('searchCond', $conditions);
+                $headers .= 'MIME-Version: 1.0' . "\r\n";
+                $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+
+                //echo $content;
+                //exit;
+
+                // Mail it
+                $send_mail = mail($email_to, $subject, $content, $headers,'-fsupport@seawindsolution.com');
+
+                $this->set('succhange', "1");
             }
         }
 
-        if(!empty($this->request->data['Pricelist']['listing_date'])){
-            $search_date = $this->request->data['Pricelist']['listing_date'];
-        } else {
-            $search_date = date('Y-m-d');
-        }
-
-        //var_dump($search_date);
-
-        $this->Session->write('search_date', $search_date);
-
-        $priceListData = $this->Pricelist->find('first', array('conditions' => array('status IN'=> array(1), 'listing_date'=>$search_date)));
-        $pricelistId = $priceListData['Pricelist']['id'];
-        
-
-        //var_dump($pricelistId);
-        //exit;
-
-        $mainConditions = array('pricelist_id'=>$pricelistId, 'status IN'=> array(0,1));
-
-        if ($this->Session->check('searchCond')) {
-            $conditions = $this->Session->read('searchCond');
-            $allConditions = array_merge($mainConditions, $conditions);
-        } else {
-            $conditions = array();
-            $allConditions = array_merge($mainConditions, $conditions);
-        }
-
-        //$this->pre($allConditions);
-        //exit;
-
-        $this->paginate = array(
-            'conditions' => $allConditions,
-            'limit' => 25,
-            'order' => array('id' => 'asc')
-        );
-        
-        $marketingprices_data = $this->paginate('MarketingPrice');
-
-        $marketingprices_alldata = $this->MarketingPrice->find('all', array('conditions' => $mainConditions));
-        //$this->pre($marketingprices_alldata);exit;
-
-        $this->set('marketingprices_data',$marketingprices_data);
-        $this->set('marketingprices_alldata',$marketingprices_alldata);
     }
 
-    public function marketing_app(){
-        $this->set('marketing_page_title', 'માર્કેટિંગ યાર્ડ ભાવ');
-        
-        //$pricelistId = $this->params['named']['pricelistId'];
+    public function change_password() {
 
-        $this->loadmodel('MarketingPrice');
-        $this->loadmodel('Pricelist');
+        //$this->layout = 'default';
 
-        if ($this->request->is('post'))
+        $this->checkmemberlogin();
+
+//        echo '    e10adc39491e240';
+//        echo "<br>".$new = $this->encrypt_data(123456);
+//        echo "<br>old  ".$old = $this->decrypt_data($new);
+
+        if(!empty($this->data))
         {
-            if(!empty($this->request->data) && isset($this->request->data) )
-            {
-                //$this->pre($this->request->data);exit; 
+            //$this->pre($this->data);
+            //exit;
 
-                $search_key = trim($this->request->data['marketingpriceSearch']['searchtitle']);
-                if (!empty($search_key))
-                {
-                    $conditions[] = array(
-                        "OR" => array(
-                            "MarketingPrice.commodityeng LIKE" => "%".$search_key."%",
-                            "MarketingPrice.commodityguj LIKE" => "%".$search_key."%",
-                            "MarketingPrice.centereng LIKE" => "%".$search_key."%",
-                            "MarketingPrice.centerguj LIKE" => "%".$search_key."%"
-                        )
-                    );
-                }
-                $this->Session->write('search_key', $search_key);
+            $errorarray = array();
 
-                $commodityeng = trim($this->request->data['marketingpriceSearch']['commodityeng']);
-                if (!empty($commodityeng))
-                {
-                    $conditions[] = array(
-                        "OR" => array(
-                            "MarketingPrice.commodityeng" => "".$commodityeng.""
-                        )
-                    );
-                    //$this->set('from_search',true);
-                }
-                $this->Session->write('search_commodityeng', $commodityeng);
-
-                $centereng = trim($this->request->data['marketingpriceSearch']['centereng']);
-                if (!empty($centereng))
-                {
-                    $conditions[] = array(
-                        "OR" => array(
-                            "MarketingPrice.centereng" => "".$centereng.""
-                        )
-                    );
-                    //$this->set('from_search',true);
-                }
-                $this->Session->write('search_centereng', $centereng);
-
-                $this->Session->write('searchCond', $conditions);
+            if (isset($this->data['User']['oldpwd']) && (trim($this->data['User']['oldpwd']) == '' || trim($this->data['User']['oldpwd']=='Password'))) {
+                $errorarray['enter_oldpwd'] = ENTER_OLD_PASSWORD;
             }
+            else
+            {
+                $check_len_pass = strlen(trim($this->data['User']['oldpwd']));
+
+                if($check_len_pass<5)
+                    $errorarray['oldpwd_minlen'] = PASSWORD_LENGTH;
+                else
+                {
+                    $check_user = $this->User->find('first', array('conditions' => array('status' => 1, 'password'=>md5($this->data['User']['oldpwd']) ,'id'=>$this->Session->read('member_login'))));
+
+                    //$this->pre($check_user);
+                    //exit;
+                    if(empty($check_user))
+                    {
+                        $errorarray['pass_not_match'] = OLDNOTMATCH;
+                    }
+                }
+            }
+
+            if (isset($this->data['User']['newpwd']) && (trim($this->data['User']['newpwd']) == '' || trim($this->data['User']['newpwd']=='Password'))) {
+                $errorarray['newpass'] = ENTER_NEW_PASSWORD;
+            }
+            else
+            {
+                $check_len_pass = strlen(trim($this->data['User']['newpwd']));
+
+                if($check_len_pass<5)
+                    $errorarray['newpass_minlen'] = NEW_PASSWORD_LENGTH;
+            }
+            if (isset($this->data['User']['confirmpwd']) && (trim($this->data['User']['confirmpwd']) == '' || trim($this->data['User']['confirmpwd']) == 'Password')) {
+                $errorarray['confpass'] = ENTER_CONFPASS;
+            }
+            else
+            {
+                $check_len_confpass = strlen(trim($this->data['User']['confirmpwd']));
+
+                if($check_len_confpass<5)
+                    $errorarray['confpass_minlen'] = CONF_PASSWORD_LENGTH;
+            }
+
+            if (trim($this->data['User']['newpwd']) != '' && trim($this->data['User']['confirmpwd']) != '' && strlen(trim($this->data['User']['newpwd']))>=5 && strlen(trim($this->data['User']['confirmpwd']))>=5 && trim($this->data['User']['newpwd']) != trim($this->data['User']['confirmpwd'])) {
+                $errorarray['conflict'] = NEWCONFPASS;
+            }
+
+
+            $this->set('errorarray',$errorarray);
+
+            if(empty($errorarray))
+            {
+//                $this->pre($errorarray);
+//                exit;
+
+                $update_user_dtl['User']['id'] = $this->Session->read('member_login');
+                $update_user_dtl['User']['password'] = md5($this->data['User']['newpwd']);
+                $update_user_dtl['User']['encrypt_password'] = $this->data['User']['newpwd']; //$this->encrypt_pass($this->data['User']['newpwd']);
+
+                //$this->pre($this->Session->read());
+
+                $name = $this->Session->read('member_name');
+                $email = $this->Session->read('member_usermail');
+                $new_pass = $this->data['User']['newpwd'];
+
+                $this->email_client_changepassword($name,$email,$new_pass);
+//                $this->pre($update_user_dtl);
+//                exit;
+
+                $this->User->save($update_user_dtl);
+                $this->set('succhange', "1");
+                //$this->redirect(DEFAULT_URL . 'change-password');
+            }
+//            $this->pre($errorarray);
+//            exit;
         }
-
-        if(!empty($this->request->data['Pricelist']['listing_date'])){
-            $search_date = $this->request->data['Pricelist']['listing_date'];
-        } else {
-            $search_date = date('Y-m-d');
-        }
-
-        //var_dump($search_date);
-
-        $this->Session->write('search_date', $search_date);
-
-        $priceListData = $this->Pricelist->find('first', array('conditions' => array('status IN'=> array(1), 'listing_date'=>$search_date)));
-        $pricelistId = $priceListData['Pricelist']['id'];
-        
-
-        //var_dump($pricelistId);
-        //exit;
-
-        $mainConditions = array('pricelist_id'=>$pricelistId, 'status IN'=> array(0,1));
-
-        if ($this->Session->check('searchCond')) {
-            $conditions = $this->Session->read('searchCond');
-            $allConditions = array_merge($mainConditions, $conditions);
-        } else {
-            $conditions = array();
-            $allConditions = array_merge($mainConditions, $conditions);
-        }
-
-        //$this->pre($allConditions);
-        //exit;
-
-        $this->paginate = array(
-            'conditions' => $allConditions,
-            'limit' => 25,
-            'order' => array('id' => 'asc')
-        );
-        
-        $marketingprices_data = $this->paginate('MarketingPrice');
-
-        $marketingprices_alldata = $this->MarketingPrice->find('all', array('conditions' => $mainConditions));
-        //$this->pre($marketingprices_alldata);exit;
-
-        $this->set('marketingprices_data',$marketingprices_data);
-        $this->set('marketingprices_alldata',$marketingprices_alldata);
     }
 
-    public function polluserform($poll_id, $selected_ans)
-    {
-        $this->set('poll_id', $poll_id);
-        $this->set('selected_ans', $selected_ans);
+    //Function for editprofile
+    function edit_profile() {
+
+        $this->loadmodel('Member');
+        $this->loadmodel('User');
+        //echo '<pre>';
+        //print_r($_SESSION);
+        //exit;
+        $this->layout = 'default';
+        //var_dump($this->Session->check('member_login'));
+        $this->checkmemberlogin();
+
+        $id = $this->Session->read('member_login');
+
+        if (!empty($this->data)) {
+
+            $userdata = $this->User->find('first', array('conditions' => array('id' => $id)));
+            //$this->pre($this->userdata);exit;        
+            $memberdata = $this->Member->find('first', array('conditions' => array('id' => $userdata['User']['member_id'])));
+
+            $insert_member_data = array();
+            $insert_member_data = $this->data;
+
+            //$this->pre($this->data);exit;
+
+            if (!empty($insert_member_data['Member']['photo']['error']) && $insert_member_data['Member']['photo']['error']==4 && $insert_member_data['Member']['photo']['size']==0) {
+                //echo "flgkmdfklg";exit;
+                unset($insert_member_data['Member']['photo']);
+            }
+
+            if (!empty($insert_member_data['Member']['doc']['error']) && $insert_member_data['Member']['doc']['error']==4 && $insert_member_data['Member']['doc']['size']==0) {
+                //echo "flgkmdfklg";exit;
+                unset($insert_member_data['Member']['doc']);
+            }
+
+            $this->Member->set($insert_member_data['Member']);
+            //$this->User->set($insert_member_data['User']);
+
+            //$this->pre($this->Member);
+            //$this->pre($this->User);exit;
+
+            //var_dump($this->User->validates());
+            //var_dump($this->User->validationErrors);
+            //exit;
+
+            if($this->User->validates()){
+                $save_errors2 = array();
+            } else {
+                $save_errors2 = $this->User->validationErrors;
+            }
+
+            if ($this->Member->validates()) //$this->News->validates() && 
+            {
+                //echo "validates true";exit;
+                // /$this->pre($insert_member_data);exit;
+                //$saved = $this->PollAnswer->save($update_poll_answer_data, false);
+                //$saved = $this->Poll->save($update_poll_data, false);
+                $insert_member_data['Member']['id'] = $memberdata['Member']['id'];
+                //$insert_member_data['Member']['photo'] = '';
+                //$insert_member_data['Member']['doc'] = '';
+
+                $insert_member_data['Member']['Method'] = "Edit";
+                //$lastRecord = $this->Member->find('first', array('columns' => array('id'), 'order' => 'id DESC'));
+                //var_dump($lastRecord);exit;
+                //$lastId = (int) $lastRecord['Member']['id'];
+                //$lastId++;
+                //$lastId = sprintf("%05d", $lastId);
+                //echo $lastId;exit;
+                //$insert_member_data['Member']['memberno'] = 'REGMEMNO'.$lastId;
+                unset($insert_member_data['Member']['memberno']);
+
+                /*if (!empty($insert_member_data['photo']['error']) && $insert_member_data['photo']['error']==4 && $insert_member_data['photo']['size']==0) {
+                    //echo "flgkmdfklg";exit;
+                    unset($insert_member_data['photo']);
+                } else {
+                    // check if file has been uploaded, if so get the file path
+                    if (!empty($this->Member->data['Member']['filepath']) && is_string($this->Member->data['Member']['filepath'])) {
+                        $insert_member_data['photo'] = $this->Member->data['Member']['filepath'];
+                    }
+                }*/
+
+                //$this->pre($insert_member_data);exit;
+                $saved = $this->Member->save($insert_member_data, false);
+                //$insert_member_data['User']['member_id'] = $this->Member->getLastInsertID();
+                //$insert_member_data['User']['name'] = $insert_member_data['Member']['first_name'];
+                //$insert_member_data['User']['user_type'] = "member";
+                //$insert_member_data['User']['password'] = md5($insert_member_data['User']['password']);
+                //$saved = $this->User->save($insert_member_data, false);
+
+                $_SESSION['success_msg'] = 'Saved Successfully';
+                $this->redirect(DEFAULT_URL . 'edit-profile');
+            }
+            else
+            {   
+                //$this->User->validates();
+                //var_dump($this->User->validationErrors);exit;
+                $save_errors = $this->Member->validationErrors;
+                //$save_errors2 = $this->User->validationErrors;
+
+                $save_errors = array_merge($save_errors, $save_errors2);
+                //$this->pre($save_errors);
+                //$this->pre($save_errors2);
+                //exit;
+                $errors_html = "<ul>";
+                foreach ($save_errors as $error_field => $field_errors)
+                {
+                    foreach ($field_errors as $err_no => $error)
+                    {
+                        $errors_html .= "<li>".$error."</li>";  
+                    }
+                }
+
+                $errors_html .= "</ul>";
+
+                //$this->pre($errors_html);exit;
+                //$this->pre($this->data);exit;
+                if(!empty($this->data['Member']['country'])){
+                    $country_id = $this->data['Member']['country'];
+                    $this->loadmodel('State');
+                    $states = $this->State->find('list', array('conditions' => array('country_id' => $country_id)));
+                    $this->set('states',$states); //$states
+                }
+
+                if(!empty($this->data['Member']['state'])){
+                    $state_id = $this->data['Member']['state'];
+                    $this->loadmodel('City');
+                    $cities = $this->City->find('list', array('conditions' => array('state_id' => $state_id)));
+                    $this->set('cities',$cities); //$states
+                }
+
+                $_SESSION['error_msg'] = $errors_html;
+                //$this->set('gotras_data',$this->data);
+
+                //$this->pre($save_errors);
+                //$this->pre($customErrors);
+                //exit;
+            }
+
+            
+
+            /*if(empty($errorarray))
+            {
+
+                $this->request->data['User']['user_type'] = 'user';
+                $this->request->data['User']['password'] = md5($this->data['User']['newpwd']);
+                $this->request->data['User']['encrypt_password'] = $this->encrypt_pass($this->data['User']['newpwd']);
+                $this->request->data['User']['status'] = '0';
+                $this->request->data['User']['created_date'] = date('Y-m-d H:i:s', time());
+                $this->request->data['User']['modified_date'] = date('Y-m-d H:i:s', time());
+
+                unset($this->request->data['User']['newpwd']);
+                unset($this->request->data['User']['confirmpwd']);
+                $this->User->save($this->data['User']);
+
+                $this->redirect(DEFAULT_ADMINURL . 'users/registration/'.SUCADD);
+
+    //                $this->pre($this->data);
+    //                exit;
+            }*/
+
+        }
+
+        $this->loadmodel('Relation');
+        $relations = $this->Relation->find('list');
+        $this->set('relations', $relations);
+
+        $this->loadmodel('Gotra');
+        $gotras = $this->Gotra->find('list');
+        $this->set('gotras', $gotras);
+
+        $this->loadmodel('Proffession');
+        $proffessions = $this->Proffession->find('list');
+        $this->set('proffessions', $proffessions);
+
+        $this->loadmodel('Country');
+        $countries = $this->Country->find('list');
+        $this->set('countries', $countries);
+
+        //$this->loadmodel('State');
+        //$states = $this->State->find('list');
+        if(!isset($states) && empty($states))
+        {
+            $this->set('states', array()); //$states
+        }
+
+         if(!isset($cities) && empty($cities))
+        {
+            $this->set('cities', array()); //$states
+        }
+
+        //$this->loadmodel('City');
+        //$cities = $this->City->find('list');
+        //$this->set('cities', array()); //$cities
+
+        //$this->pre($countries);exit;
+        //var_dump($id);
+        $this->userdata = $this->User->find('first', array('conditions' => array('id' => $id)));
+        //$this->pre($this->userdata);exit;        
+        $this->data = $this->Member->find('first', array('conditions' => array('id' => $this->userdata['User']['member_id'])));
+
+        $this->set('cms_page_title', 'Registration');
     }
 
 }

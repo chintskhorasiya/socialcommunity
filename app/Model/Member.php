@@ -281,15 +281,42 @@ class Member extends AppModel {
     public function beforeSave($options = array()) {
         // a file has been uploaded so grab the filepath
         //echo '<pre>';
+        //var_dump($options);
         //print_r($this->data);exit;
-        if (!empty($this->data[$this->alias]['filepath'])) {
-            $this->data[$this->alias]['photo'] = $this->data[$this->alias]['filepath'];
-        }
-        if (!empty($this->data[$this->alias]['filepath2'])) {
-            //var_dump($this->data[$this->alias]['filepath2']);exit;
-            $this->data[$this->alias]['doc'] = $this->data[$this->alias]['filepath2'];
-        }
         
+        if($this->data[$this->alias]['Method'] == "Edit")
+        {
+            //echo "ghfgh";exit;
+            if (!empty($this->data[$this->alias]['photo']['error']) && $this->data[$this->alias]['photo']['error']==4 && $$this->data[$this->alias]['photo']['size']==0) {
+                //echo "flgkmdfklg";exit;
+                unset($$this->data[$this->alias]['photo']);
+            } else {
+                // check if file has been uploaded, if so get the file path
+                if (!empty($this->data[$this->alias]['filepath']) && is_string($this->data[$this->alias]['filepath'])) {
+                    $this->data[$this->alias]['photo'] = $this->data[$this->alias]['filepath'];
+                }
+            }
+
+            if (!empty($this->data[$this->alias]['doc']['error']) && $this->data[$this->alias]['doc']['error']==4 && $$this->data[$this->alias]['doc']['size']==0) {
+                //echo "flgkmdfklg";exit;
+                unset($$this->data[$this->alias]['doc']);
+            } else {
+                // check if file has been uploaded, if so get the file path
+                if (!empty($this->data[$this->alias]['filepath']) && is_string($this->data[$this->alias]['filepath'])) {
+                    $this->data[$this->alias]['doc'] = $this->data[$this->alias]['filepath'];
+                }
+            }
+
+        } else {
+            if (!empty($this->data[$this->alias]['filepath'])) {
+                $this->data[$this->alias]['photo'] = $this->data[$this->alias]['filepath'];
+            }
+            if (!empty($this->data[$this->alias]['filepath2'])) {
+                //var_dump($this->data[$this->alias]['filepath2']);exit;
+                $this->data[$this->alias]['doc'] = $this->data[$this->alias]['filepath2'];
+            }
+        }
+        //print_r($this->data);exit;
         return parent::beforeSave($options);
     }
 

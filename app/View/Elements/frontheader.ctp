@@ -24,7 +24,12 @@
 				if ($this->Session->check('member_login') == true) {
 		            ?>
 		            <ul class="top-details login-link">
-						<li><a href="#">Hi, <?=$this->Session->read('member_name')?></a></li>
+						<li><a href="#">Hi, <?=$this->Session->read('member_name')?></a>
+						    <ul class="login-submenu">
+								<li><a href="<?=DEFAULT_URL?>login">Login</a></li>
+								<li><a href="<?=DEFAULT_URL?>registration">Register</a></li> 
+							</ul>
+						</li>
 						<li><a href="<?=DEFAULT_URL?>logout">Logout</a></li>
 					</ul>
 					<?php

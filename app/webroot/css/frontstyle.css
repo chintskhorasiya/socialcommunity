@@ -347,7 +347,7 @@ table.dire-listing tr:nth-child(2n) {
     background:#f5f5f5;
 }
 .matrimonial-search-box.search-section .search-field {
-    width: 22.666667%;
+    
 } 
 .de-photo {
         width: 168px;
@@ -2253,9 +2253,7 @@ h3.title-w3l.w3l-2:before {
 .search-section {
     margin:0px 0px 25px;
 }
-.search-section .search-field{
-    width: 14.666667%;
-}
+ 
 .search-section .ab_button {
     margin: 9px 0px 0px;
 }
@@ -2293,7 +2291,7 @@ h3.title-w3l.w3l-2:before {
 .navbar-default .navbar-toggle .icon-bar {background-color: #fff;}
 .navbar-toggle {background-color: #eb3136;} 
 .date-events {margin:5px 0px 4px;}
-.front-pagination1 {position: relative;}
+.front-pagination1 {position: relative;padding: 0px 15px; margin-top: 25px;}
 
 @media (min-width:1200px) and (max-width:1280px) {  
      .container { width:1170px;}
@@ -2383,12 +2381,13 @@ h3.title-w3l.w3l-2:before {
     .payment-details {margin-top:28px;}
     .payment-page .col-md-6, .payment-page .col-md-12 {padding:0px 15px;}
     .payment-page .ab_button, .contact-page .ab_button{margin-left: 15px;}
-    .matrimonial-search-box.search-section .search-field {width: 33%;float: left;}
+    .matrimonial-search-box.search-section .search-field {width:29%;float: left;}
+    .matrimonial-search-box.search-section .col-md-1{float: left;}
     .search-section {margin: 0px -15px 25px;}
-    .matrimonial-search-box.search-section .col-md-1{width: 33%;float: left;}
-    .search-section .col-md-3 {width: 33%;float: left;}
+	.search-section .col-md-4 {width: 29%;float: left;}
+    .search-section .col-md-3 {width:29%;float: left;}
     .search-section .col-md-2{width: 33%;float: left;}
-    .search-section .col-md-1{width: 33%;float: left;}
+    .search-section .col-md-1{ float: left;}
     .member-list-details h3 {font-size: 20px;}
     .member-list-p{padding:0px 0px;overflow:hidden;}
     .member-list{padding: 0px 10px;width: 50%;float: left;}
@@ -2532,4 +2531,26 @@ h3.title-w3l.w3l-2:before {
 .error-message
 {
     color:red;
+}
+
+.login-submenu{
+	display:none;
+	width:180px;
+}
+.login-submenu li {
+	display:block;
+	border-bottom:1px solid #eee;
+}
+.login-submenu li a {
+    background: #ec3237;
+    padding: 5px 10px;
+	text-align:left;
+	display:block;
+    border-radius: 0px;
+	}
+.top-details li:hover > .login-submenu {
+	display:block;
+	position:absolute;
+	padding:5px 0px 0px;
+	z-index:111;
 }
